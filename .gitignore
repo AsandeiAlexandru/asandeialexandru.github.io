@@ -1,3 +1,12 @@
+# Exclude raw photos and reference models from Git
+me background.jpeg
+me_white_background.jpeg
+me_nobackground.png
+templete_model_website.jpg
+*.jpeg
+*.jpg
+
+# OS / Editor files
 .DS_Store
 Thumbs.db
 *.log

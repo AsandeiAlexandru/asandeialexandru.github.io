@@ -6,9 +6,10 @@ This document tracks completed refinements, upcoming enhancements, content addit
 
 ## 📌 Priority 1: Visual Assets & Profile Media
 
-- [ ] **Professional Avatar / Headshot**:
-  - Add a high-quality portrait/photo of Alexandru in the Hero section next to the introduction.
-  - Option to sync the same photo into the CV header if desired.
+- [x] **Professional Avatar / Cutout Portrait**:
+  - Added transparent cutout portrait of Alexandru on the right side of the Hero section.
+  - Styled with glowing tech orbit rings and floating badges (`C++`, `Java 21`, `FastAPI`, `Win32 & Sockets`) inspired by `templete_model_website.jpg`.
+  - Excluded raw original photos (`me background.jpeg`, `me_white_background.jpeg`, `me_nobackground.png`, `templete_model_website.jpg`) from the GitHub repository via `.gitignore`.
 - [ ] **Project Screenshots & GIFs**:
   - **PhoneAsPeri**: Add a 5–10 second GIF or high-resolution screenshot of the Flutter mobile studio (virtual keyboard, joystick, air mouse) and Windows daemon console showing sub-10ms packet timings.
   - **LDD_FRS**: Add a screenshot of the football player analytics dashboard UI and PPI charts.
@@ -20,6 +21,9 @@ This document tracks completed refinements, upcoming enhancements, content addit
 
 ## ⚡ Priority 2: Technical & Interactive Features
 
+- [x] **Navigation Bar Alignment**:
+  - Removed "Contact" from the navigation links.
+  - Aligned navigation links to the left side directly next to the brand logo.
 - [ ] **Light / Dark Mode Switcher**:
   - The site defaults to a sleek dark glassmorphic theme. Add a toggle button in the navbar allowing visitors to switch to a clean light theme.
 - [ ] **Project Deep-Dive Modals**:
@@ -59,20 +63,15 @@ Whenever you update your resume or add new achievements:
 
 ## ✅ Completed Milestones
 
-- [x] **Streamlined Hero Section**:
-  - Kept only: *"Computer Science student at the Technical University of Cluj-Napoca (UTCN)"*.
-  - Removed status pill (*"Open for Software Engineering Internships & Opportunities"*).
-  - Renamed resume buttons to clean *"Download Resume"* (removed "ATS" prefix).
-  - Displayed *"GitHub"* cleanly with icon before name (instead of raw URL).
-  - Placed logos before names for all social links (GitHub, LinkedIn, Email).
-- [x] **Removed Redundant Metric Cards**:
-  - Cleaned up the 4 stat boxes from the hero section for a more focused layout.
-- [x] **Removed Duplicate Bottom Contact Card**:
-  - Streamlined all contact details into a clean, minimal footer with icons before names and no duplicate cards.
-- [x] **Initial Responsive Architecture**:
-  - Glassmorphic dark design with Tailwind CSS and Vanilla JS.
-  - Category project filtering (*All*, *Systems & C++*, *Cloud & Full-Stack*, *Mobile & Desktop*).
-  - Direct PDF resume download integrated.
-  - Interactive "Copy Email" button with toast notification.
+- [x] **Hero Section with Tech Orbit & Cutout Portrait**:
+  - Side-by-side grid layout matching `templete_model_website.jpg`.
+  - Portrait of Alexandru with floating animated skill badges.
+  - Clean bio: *"Computer Science student at the Technical University of Cluj-Napoca (UTCN)"*.
+  - Renamed resume button to clean *"Download Resume"*.
+  - Official GitHub & LinkedIn logo images before names.
+- [x] **Left-Aligned Navigation**:
+  - Aligned menu links to the left beside the brand name, removed duplicate contact link.
+- [x] **Privacy & Clean Git Tracking**:
+  - Excluded raw original photos and reference screenshots from the GitHub repository.
 - [x] **Live GitHub Pages Deployment**:
   - Deployed directly to [https://asandeialexandru.github.io](https://asandeialexandru.github.io).

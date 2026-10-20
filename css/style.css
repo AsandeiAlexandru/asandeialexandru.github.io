@@ -106,3 +106,50 @@ code, .font-mono {
     transform: translateY(0);
   }
 }
+
+/* Floating animation for tech badges around portrait */
+@keyframes floatSlow {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes floatSlowAlt {
+  0%, 100% {
+    transform: translateY(-6px);
+  }
+  50% {
+    transform: translateY(4px);
+  }
+}
+
+.floating-badge-1 {
+  animation: floatSlow 4s ease-in-out infinite;
+}
+
+.floating-badge-2 {
+  animation: floatSlowAlt 4.5s ease-in-out infinite 0.5s;
+}
+
+.floating-badge-3 {
+  animation: floatSlow 5s ease-in-out infinite 1s;
+}
+
+.floating-badge-4 {
+  animation: floatSlowAlt 4.8s ease-in-out infinite 1.5s;
+}
+
+/* Glowing orbit effect */
+.tech-orbit {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  border: 1px dashed rgba(59, 130, 246, 0.35);
+  box-shadow: 0 0 50px rgba(59, 130, 246, 0.15), inset 0 0 40px rgba(99, 102, 241, 0.1);
+  pointer-events: none;
+}

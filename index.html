@@ -55,25 +55,28 @@
   <!-- Navigation Bar -->
   <header class="fixed top-0 left-0 right-0 z-50 glass-nav">
     <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
-      <a href="#" class="flex items-center gap-2 group">
-        <span class="w-8 h-8 rounded-lg bg-gradient-to-tr from-blue-600 to-indigo-500 flex items-center justify-center font-mono font-bold text-white text-sm shadow-md shadow-blue-500/20 group-hover:scale-105 transition-transform">
-          AA
-        </span>
-        <span class="font-bold text-slate-100 tracking-tight group-hover:text-blue-400 transition-colors">
-          Alexandru Asandei
-        </span>
-      </a>
+      
+      <!-- Left side: Brand Logo + Navigation Links aligned together -->
+      <div class="flex items-center gap-8">
+        <a href="#" class="flex items-center gap-2 group shrink-0">
+          <span class="w-8 h-8 rounded-lg bg-gradient-to-tr from-blue-600 to-indigo-500 flex items-center justify-center font-mono font-bold text-white text-sm shadow-md shadow-blue-500/20 group-hover:scale-105 transition-transform">
+            AA
+          </span>
+          <span class="font-bold text-slate-100 tracking-tight group-hover:text-blue-400 transition-colors">
+            Alexandru Asandei
+          </span>
+        </a>
 
-      <!-- Desktop Nav Links -->
-      <nav class="hidden md:flex items-center gap-8">
-        <a href="#about" class="desktop-nav-link text-sm font-medium text-slate-300 hover:text-white transition-colors relative py-1">About</a>
-        <a href="#projects" class="desktop-nav-link text-sm font-medium text-slate-300 hover:text-white transition-colors relative py-1">Projects</a>
-        <a href="#skills" class="desktop-nav-link text-sm font-medium text-slate-300 hover:text-white transition-colors relative py-1">Skills</a>
-        <a href="#education" class="desktop-nav-link text-sm font-medium text-slate-300 hover:text-white transition-colors relative py-1">Education</a>
-        <a href="#contact" class="desktop-nav-link text-sm font-medium text-slate-300 hover:text-white transition-colors relative py-1">Contact</a>
-      </nav>
+        <!-- Desktop Nav Links (positioned on the left side) -->
+        <nav class="hidden md:flex items-center gap-6">
+          <a href="#about" class="desktop-nav-link text-sm font-medium text-slate-300 hover:text-white transition-colors relative py-1">About</a>
+          <a href="#projects" class="desktop-nav-link text-sm font-medium text-slate-300 hover:text-white transition-colors relative py-1">Projects</a>
+          <a href="#skills" class="desktop-nav-link text-sm font-medium text-slate-300 hover:text-white transition-colors relative py-1">Skills</a>
+          <a href="#education" class="desktop-nav-link text-sm font-medium text-slate-300 hover:text-white transition-colors relative py-1">Education</a>
+        </nav>
+      </div>
 
-      <!-- Action Button -->
+      <!-- Right side: Action Button -->
       <div class="hidden md:flex items-center gap-3">
         <a href="Alexandru_Asandei_CV.pdf" download="Alexandru_Asandei_CV.pdf" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-600 hover:bg-blue-500 text-white text-xs font-semibold shadow-lg shadow-blue-600/25 transition-all hover:shadow-blue-500/35 hover:-translate-y-0.5">
           <i data-lucide="file-down" class="w-4 h-4"></i>
@@ -93,7 +96,6 @@
       <a href="#projects" class="mobile-nav-link text-sm text-slate-300 hover:text-blue-400 py-1">Projects</a>
       <a href="#skills" class="mobile-nav-link text-sm text-slate-300 hover:text-blue-400 py-1">Skills</a>
       <a href="#education" class="mobile-nav-link text-sm text-slate-300 hover:text-blue-400 py-1">Education</a>
-      <a href="#contact" class="mobile-nav-link text-sm text-slate-300 hover:text-blue-400 py-1">Contact</a>
       <a href="Alexandru_Asandei_CV.pdf" download="Alexandru_Asandei_CV.pdf" class="inline-flex items-center justify-center gap-2 mt-2 px-4 py-2 rounded-lg bg-blue-600 text-white text-xs font-semibold">
         <i data-lucide="file-down" class="w-4 h-4"></i>
         <span>Download Resume</span>
@@ -105,46 +107,95 @@
 
     <!-- HERO SECTION -->
     <section id="about" class="max-w-6xl mx-auto px-6 py-12 md:py-20">
-      <div class="max-w-3xl">
-        <h1 class="text-4xl sm:text-6xl font-extrabold text-white tracking-tight leading-tight sm:leading-none mb-6">
-          Hi, I'm <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-sky-300 to-indigo-400">Alexandru Asandei</span>.
-        </h1>
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Left Column: Bio & Actions -->
+        <div class="lg:col-span-7">
+          <div class="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-widest text-blue-400 font-semibold mb-4">
+            <span class="w-6 h-0.5 bg-blue-500 inline-block"></span>
+            <span>Hello, I'm</span>
+          </div>
 
-        <p class="text-lg sm:text-xl text-slate-300 font-light leading-relaxed mb-8">
-          Computer Science student at the <strong class="text-white font-medium">Technical University of Cluj-Napoca (UTCN)</strong>.
-        </p>
+          <h1 class="text-4xl sm:text-6xl font-extrabold text-white tracking-tight leading-tight mb-4">
+            Alexandru <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-sky-300 to-indigo-400">Asandei</span>.
+          </h1>
 
-        <!-- CTA Buttons -->
-        <div class="flex flex-wrap items-center gap-4 mb-10">
-          <a href="#projects" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-medium text-sm shadow-xl shadow-blue-600/30 hover:shadow-blue-500/40 transition-all hover:-translate-y-0.5">
-            <span>Explore Projects</span>
-            <i data-lucide="arrow-right" class="w-4 h-4"></i>
-          </a>
-          <a href="Alexandru_Asandei_CV.pdf" download="Alexandru_Asandei_CV.pdf" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl glass-panel text-slate-200 hover:text-white hover:bg-slate-800/80 font-medium text-sm transition-all hover:-translate-y-0.5">
-            <i data-lucide="file-down" class="w-4 h-4 text-blue-400"></i>
-            <span>Download Resume</span>
-          </a>
-          <button class="copy-email-btn inline-flex items-center gap-2 px-5 py-3 rounded-xl glass-panel text-slate-300 hover:text-white font-medium text-sm transition-all">
-            <i data-lucide="mail" class="w-4 h-4 text-emerald-400"></i>
-            <span>Copy Email</span>
-          </button>
+          <p class="text-lg sm:text-xl text-slate-300 font-light leading-relaxed mb-8">
+            Computer Science student at the <strong class="text-white font-medium">Technical University of Cluj-Napoca (UTCN)</strong>.
+          </p>
+
+          <!-- CTA Buttons -->
+          <div class="flex flex-wrap items-center gap-4 mb-10">
+            <a href="#projects" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-medium text-sm shadow-xl shadow-blue-600/30 hover:shadow-blue-500/40 transition-all hover:-translate-y-0.5">
+              <span>Explore Projects</span>
+              <i data-lucide="arrow-right" class="w-4 h-4"></i>
+            </a>
+            <a href="Alexandru_Asandei_CV.pdf" download="Alexandru_Asandei_CV.pdf" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl glass-panel text-slate-200 hover:text-white hover:bg-slate-800/80 font-medium text-sm transition-all hover:-translate-y-0.5">
+              <i data-lucide="file-down" class="w-4 h-4 text-blue-400"></i>
+              <span>Download Resume</span>
+            </a>
+            <button class="copy-email-btn inline-flex items-center gap-2 px-5 py-3 rounded-xl glass-panel text-slate-300 hover:text-white font-medium text-sm transition-all">
+              <i data-lucide="mail" class="w-4 h-4 text-emerald-400"></i>
+              <span>Copy Email</span>
+            </button>
+          </div>
+
+          <!-- Social Proof & External Links -->
+          <div class="flex items-center gap-6 text-sm text-slate-300">
+            <a href="https://github.com/AsandeiAlexandru" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 hover:text-white transition-colors group">
+              <img src="github_logo.png" alt="GitHub" class="w-5 h-5 rounded-full object-contain">
+              <span>GitHub</span>
+            </a>
+            <a href="https://www.linkedin.com/in/alex-asandei-6b8263370/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 hover:text-blue-400 transition-colors group">
+              <img src="linkedin_logo.png" alt="LinkedIn" class="w-5 h-5 rounded object-contain">
+              <span>LinkedIn</span>
+            </a>
+            <span class="inline-flex items-center gap-1.5 text-slate-400">
+              <i data-lucide="map-pin" class="w-4 h-4 text-rose-400"></i>
+              <span>Cluj-Napoca, Romania</span>
+            </span>
+          </div>
         </div>
 
-        <!-- Social Proof & External Links -->
-        <div class="flex items-center gap-6 text-sm text-slate-300">
-          <a href="https://github.com/AsandeiAlexandru" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 hover:text-white transition-colors group">
-            <img src="github_logo.png" alt="GitHub" class="w-5 h-5 rounded-full object-contain">
-            <span>GitHub</span>
-          </a>
-          <a href="https://www.linkedin.com/in/alex-asandei-6b8263370/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 hover:text-blue-400 transition-colors group">
-            <img src="linkedin_logo.png" alt="LinkedIn" class="w-5 h-5 rounded object-contain">
-            <span>LinkedIn</span>
-          </a>
-          <span class="inline-flex items-center gap-1.5 text-slate-400">
-            <i data-lucide="map-pin" class="w-4 h-4 text-rose-400"></i>
-            <span>Cluj-Napoca, Romania</span>
-          </span>
+        <!-- Right Column: Cutout Portrait with Glowing Tech Ring & Floating Badges -->
+        <div class="lg:col-span-5 flex justify-center relative select-none">
+          
+          <!-- Outer Tech Orbit Rings & Ambient Glow -->
+          <div class="w-[300px] h-[300px] sm:w-[360px] sm:h-[360px] tech-orbit"></div>
+          <div class="w-[240px] h-[240px] sm:w-[280px] sm:h-[280px] tech-orbit border-indigo-500/25"></div>
+          <div class="absolute w-[280px] h-[280px] rounded-full bg-blue-600/15 filter blur-3xl pointer-events-none"></div>
+
+          <!-- Cutout Portrait -->
+          <div class="relative z-10 pt-4 flex items-end justify-center">
+            <img src="alexandru_portrait.png" alt="Alexandru Asandei" class="w-56 sm:w-64 lg:w-72 h-auto object-contain drop-shadow-[0_20px_35px_rgba(59,130,246,0.35)] filter contrast-[1.03]">
+          </div>
+
+          <!-- Floating Tech Badge 1: C++ (Top-Left) -->
+          <div class="floating-badge-1 absolute top-2 -left-2 sm:left-4 z-20 px-3 py-1.5 rounded-full glass-panel border border-blue-500/30 text-xs font-mono text-blue-300 shadow-xl shadow-blue-950/50 flex items-center gap-1.5 backdrop-blur-md">
+            <span class="w-2 h-2 rounded-full bg-blue-400"></span>
+            <span>C++</span>
+          </div>
+
+          <!-- Floating Tech Badge 2: Java 21 / Spring (Top-Right) -->
+          <div class="floating-badge-2 absolute top-6 -right-2 sm:right-4 z-20 px-3 py-1.5 rounded-full glass-panel border border-indigo-500/30 text-xs font-mono text-indigo-300 shadow-xl shadow-indigo-950/50 flex items-center gap-1.5 backdrop-blur-md">
+            <span class="w-2 h-2 rounded-full bg-indigo-400"></span>
+            <span>Java 21</span>
+          </div>
+
+          <!-- Floating Tech Badge 3: Python / FastAPI (Bottom-Left) -->
+          <div class="floating-badge-3 absolute bottom-8 -left-3 sm:left-2 z-20 px-3 py-1.5 rounded-full glass-panel border border-emerald-500/30 text-xs font-mono text-emerald-300 shadow-xl shadow-emerald-950/50 flex items-center gap-1.5 backdrop-blur-md">
+            <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+            <span>FastAPI</span>
+          </div>
+
+          <!-- Floating Tech Badge 4: Win32 & Sockets (Bottom-Right) -->
+          <div class="floating-badge-4 absolute bottom-12 -right-3 sm:right-2 z-20 px-3 py-1.5 rounded-full glass-panel border border-sky-500/30 text-xs font-mono text-sky-300 shadow-xl shadow-sky-950/50 flex items-center gap-1.5 backdrop-blur-md">
+            <span class="w-2 h-2 rounded-full bg-sky-400"></span>
+            <span>Win32 & Sockets</span>
+          </div>
+
         </div>
+
       </div>
     </section>
 
