@@ -77,7 +77,7 @@
       <div class="hidden md:flex items-center gap-3">
         <a href="Alexandru_Asandei_CV.pdf" download="Alexandru_Asandei_CV.pdf" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-600 hover:bg-blue-500 text-white text-xs font-semibold shadow-lg shadow-blue-600/25 transition-all hover:shadow-blue-500/35 hover:-translate-y-0.5">
           <i data-lucide="file-down" class="w-4 h-4"></i>
-          <span>Resume (PDF)</span>
+          <span>Resume</span>
         </a>
       </div>
 
@@ -96,7 +96,7 @@
       <a href="#contact" class="mobile-nav-link text-sm text-slate-300 hover:text-blue-400 py-1">Contact</a>
       <a href="Alexandru_Asandei_CV.pdf" download="Alexandru_Asandei_CV.pdf" class="inline-flex items-center justify-center gap-2 mt-2 px-4 py-2 rounded-lg bg-blue-600 text-white text-xs font-semibold">
         <i data-lucide="file-down" class="w-4 h-4"></i>
-        <span>Download Resume (PDF)</span>
+        <span>Download Resume</span>
       </a>
     </div>
   </header>
@@ -106,29 +106,23 @@
     <!-- HERO SECTION -->
     <section id="about" class="max-w-6xl mx-auto px-6 py-12 md:py-20">
       <div class="max-w-3xl">
-        <!-- Status Pill -->
-        <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-blue-950/60 border border-blue-800/50 text-blue-300 text-xs font-medium mb-6">
-          <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-          <span>Open for Software Engineering Internships & Opportunities</span>
-        </div>
-
         <h1 class="text-4xl sm:text-6xl font-extrabold text-white tracking-tight leading-tight sm:leading-none mb-6">
           Hi, I'm <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-sky-300 to-indigo-400">Alexandru Asandei</span>.
         </h1>
 
         <p class="text-lg sm:text-xl text-slate-300 font-light leading-relaxed mb-8">
-          Computer Science student at the <strong class="text-white font-medium">Technical University of Cluj-Napoca (UTCN)</strong> and Software Engineer. Focused on <span class="text-blue-400 font-medium">low-latency systems</span>, native Windows & socket programming, scalable <span class="text-indigo-400 font-medium">cloud microservices</span>, and modern mobile applications.
+          Computer Science student at the <strong class="text-white font-medium">Technical University of Cluj-Napoca (UTCN)</strong>.
         </p>
 
         <!-- CTA Buttons -->
-        <div class="flex flex-wrap items-center gap-4 mb-12">
+        <div class="flex flex-wrap items-center gap-4 mb-10">
           <a href="#projects" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-medium text-sm shadow-xl shadow-blue-600/30 hover:shadow-blue-500/40 transition-all hover:-translate-y-0.5">
             <span>Explore Projects</span>
             <i data-lucide="arrow-right" class="w-4 h-4"></i>
           </a>
           <a href="Alexandru_Asandei_CV.pdf" download="Alexandru_Asandei_CV.pdf" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl glass-panel text-slate-200 hover:text-white hover:bg-slate-800/80 font-medium text-sm transition-all hover:-translate-y-0.5">
-            <i data-lucide="download" class="w-4 h-4 text-blue-400"></i>
-            <span>Download ATS Resume</span>
+            <i data-lucide="file-down" class="w-4 h-4 text-blue-400"></i>
+            <span>Download Resume</span>
           </a>
           <button class="copy-email-btn inline-flex items-center gap-2 px-5 py-3 rounded-xl glass-panel text-slate-300 hover:text-white font-medium text-sm transition-all">
             <i data-lucide="mail" class="w-4 h-4 text-emerald-400"></i>
@@ -138,42 +132,18 @@
 
         <!-- Social Proof & External Links -->
         <div class="flex items-center gap-6 text-sm text-slate-400">
-          <a href="https://github.com/AsandeiAlexandru" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 hover:text-white transition-colors">
-            <i data-lucide="github" class="w-4 h-4"></i>
-            <span>github.com/AsandeiAlexandru</span>
+          <a href="https://github.com/AsandeiAlexandru" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 hover:text-white transition-colors group">
+            <i data-lucide="github" class="w-4 h-4 text-slate-400 group-hover:text-white transition-colors"></i>
+            <span>GitHub</span>
           </a>
-          <a href="https://www.linkedin.com/in/alex-asandei-6b8263370/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 hover:text-blue-400 transition-colors">
-            <i data-lucide="linkedin" class="w-4 h-4"></i>
+          <a href="https://www.linkedin.com/in/alex-asandei-6b8263370/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 hover:text-blue-400 transition-colors group">
+            <i data-lucide="linkedin" class="w-4 h-4 text-blue-400 group-hover:text-blue-300 transition-colors"></i>
             <span>LinkedIn</span>
           </a>
           <span class="inline-flex items-center gap-1.5 text-slate-400">
             <i data-lucide="map-pin" class="w-4 h-4 text-rose-400"></i>
             <span>Cluj-Napoca, Romania</span>
           </span>
-        </div>
-      </div>
-
-      <!-- Engineering Highlights Stats Grid -->
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-16 pt-12 border-t border-slate-800/80">
-        <div class="glass-panel p-5 rounded-2xl">
-          <div class="text-3xl font-extrabold text-white font-mono mb-1 text-blue-400">&lt; 10ms</div>
-          <div class="text-xs text-slate-400 font-medium uppercase tracking-wider">Network Latency</div>
-          <div class="text-xs text-slate-500 mt-1">UDP hot-path in PhoneAsPeri</div>
-        </div>
-        <div class="glass-panel p-5 rounded-2xl">
-          <div class="text-3xl font-extrabold text-white font-mono mb-1 text-emerald-400">&lt; 5 MB</div>
-          <div class="text-xs text-slate-400 font-medium uppercase tracking-wider">RAM Footprint</div>
-          <div class="text-xs text-slate-500 mt-1">Zero allocations in C++ daemon</div>
-        </div>
-        <div class="glass-panel p-5 rounded-2xl">
-          <div class="text-3xl font-extrabold text-white font-mono mb-1 text-indigo-400">4+</div>
-          <div class="text-xs text-slate-400 font-medium uppercase tracking-wider">Microservices</div>
-          <div class="text-xs text-slate-500 mt-1">GCP Cloud Run & Neon Postgres</div>
-        </div>
-        <div class="glass-panel p-5 rounded-2xl">
-          <div class="text-3xl font-extrabold text-white font-mono mb-1 text-sky-400">Year 3/4</div>
-          <div class="text-xs text-slate-400 font-medium uppercase tracking-wider">CS at UTCN</div>
-          <div class="text-xs text-slate-500 mt-1">English Curriculum • Exp. 2028</div>
         </div>
       </div>
     </section>
@@ -515,69 +485,41 @@
       </div>
     </section>
 
-    <!-- CONTACT / RESUME SECTION -->
-    <section id="contact" class="max-w-6xl mx-auto px-6 py-20">
-      <div class="glass-panel rounded-3xl p-8 sm:p-14 border border-blue-600/20 relative overflow-hidden text-center max-w-3xl mx-auto">
-        <div class="ambient-orb w-[300px] h-[300px] bg-blue-600/20 top-[0px] left-[20%]"></div>
-        
-        <div class="relative z-10">
-          <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-blue-600 to-indigo-500 mx-auto flex items-center justify-center text-white mb-6 shadow-xl shadow-blue-500/25">
-            <i data-lucide="send" class="w-7 h-7"></i>
-          </div>
-
-          <h3 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight mb-4">
-            Let's Build Something Great Together
-          </h3>
-
-          <p class="text-sm sm:text-base text-slate-300 font-light mb-8 max-w-xl mx-auto leading-relaxed">
-            I am actively looking for software engineering internships and junior engineering roles. Feel free to reach out directly or download my ATS resume.
-          </p>
-
-          <div class="flex flex-wrap items-center justify-center gap-4 mb-8">
-            <a href="mailto:asandeialexandru@gmail.com" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-medium text-sm shadow-xl shadow-blue-600/30 transition-all hover:-translate-y-0.5">
-              <i data-lucide="mail" class="w-4 h-4"></i>
-              <span>asandeialexandru@gmail.com</span>
-            </a>
-            <button class="copy-email-btn inline-flex items-center gap-2 px-5 py-3 rounded-xl glass-panel text-slate-200 hover:text-white font-medium text-sm transition-all hover:bg-slate-800">
-              <i data-lucide="copy" class="w-4 h-4 text-emerald-400"></i>
-              <span>Copy Email</span>
-            </button>
-            <a href="Alexandru_Asandei_CV.pdf" download="Alexandru_Asandei_CV.pdf" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl glass-panel text-blue-400 hover:text-white font-medium text-sm transition-all hover:bg-slate-800">
-              <i data-lucide="file-down" class="w-4 h-4"></i>
-              <span>Download CV (PDF)</span>
-            </a>
-          </div>
-
-          <div class="flex items-center justify-center gap-6 text-sm text-slate-400 pt-6 border-t border-slate-800">
-            <a href="https://github.com/AsandeiAlexandru" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors flex items-center gap-1.5">
-              <i data-lucide="github" class="w-4 h-4"></i>
-              <span>GitHub</span>
-            </a>
-            <span>•</span>
-            <a href="https://www.linkedin.com/in/alex-asandei-6b8263370/" target="_blank" rel="noopener noreferrer" class="hover:text-blue-400 transition-colors flex items-center gap-1.5">
-              <i data-lucide="linkedin" class="w-4 h-4"></i>
-              <span>LinkedIn</span>
-            </a>
-            <span>•</span>
-            <span class="flex items-center gap-1.5 text-slate-300 font-mono">
-              <i data-lucide="phone" class="w-4 h-4 text-emerald-400"></i>
-              <span>+40 773 857 138</span>
-            </span>
-          </div>
-        </div>
-      </div>
-    </section>
-
   </main>
 
-  <!-- FOOTER -->
-  <footer class="relative z-10 border-t border-slate-800/80 py-8 text-center text-xs text-slate-500">
-    <div class="max-w-6xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
-      <div>
-        © <span id="current-year">2026</span> Alexandru Asandei. Crafted with clean semantic code & Tailwind CSS.
+  <!-- FOOTER & CONTACT -->
+  <footer id="contact" class="relative z-10 border-t border-slate-800/80 py-10 text-center text-xs text-slate-500">
+    <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
+      <div class="flex items-center gap-2">
+        <span class="w-6 h-6 rounded-md bg-blue-600/30 text-blue-400 font-mono font-bold flex items-center justify-center text-xs">AA</span>
+        <span>© <span id="current-year">2026</span> Alexandru Asandei</span>
       </div>
-      <div class="flex items-center gap-4 text-slate-400">
-        <a href="#about" class="hover:text-white transition-colors">Back to top ↑</a>
+
+      <!-- Contact & Social Links (logo before name, clean & non-redundant) -->
+      <div class="flex flex-wrap items-center justify-center gap-6 text-slate-400">
+        <a href="mailto:asandeialexandru@gmail.com" class="hover:text-white transition-colors flex items-center gap-1.5">
+          <i data-lucide="mail" class="w-3.5 h-3.5 text-emerald-400"></i>
+          <span>asandeialexandru@gmail.com</span>
+        </a>
+        <a href="https://github.com/AsandeiAlexandru" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors flex items-center gap-1.5">
+          <i data-lucide="github" class="w-3.5 h-3.5 text-slate-300"></i>
+          <span>GitHub</span>
+        </a>
+        <a href="https://www.linkedin.com/in/alex-asandei-6b8263370/" target="_blank" rel="noopener noreferrer" class="hover:text-blue-400 transition-colors flex items-center gap-1.5">
+          <i data-lucide="linkedin" class="w-3.5 h-3.5 text-blue-400"></i>
+          <span>LinkedIn</span>
+        </a>
+        <span class="flex items-center gap-1.5 text-slate-400 font-mono">
+          <i data-lucide="phone" class="w-3.5 h-3.5 text-emerald-400"></i>
+          <span>+40 773 857 138</span>
+        </span>
+      </div>
+
+      <div>
+        <a href="#about" class="text-slate-400 hover:text-white transition-colors flex items-center gap-1">
+          <span>Back to top</span>
+          <i data-lucide="arrow-up" class="w-3 h-3"></i>
+        </a>
       </div>
     </div>
   </footer>
