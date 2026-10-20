@@ -74,11 +74,11 @@ function initMobileMenu() {
 // ScrollSpy Active Link Tracking
 function initScrollSpy() {
   const sections = document.querySelectorAll('section[id]');
-  const navLinks = document.querySelectorAll('.desktop-nav-link');
+  const sidebarLinks = document.querySelectorAll('.sidebar-nav-link');
 
   window.addEventListener('scroll', () => {
     let current = '';
-    const scrollPosition = window.pageYOffset + 140;
+    const scrollPosition = window.pageYOffset + 160;
 
     sections.forEach(section => {
       const sectionTop = section.offsetTop;
@@ -88,12 +88,10 @@ function initScrollSpy() {
       }
     });
 
-    navLinks.forEach(link => {
-      link.classList.remove('text-amber-400', 'border-b-2', 'border-amber-500');
-      link.classList.add('text-slate-300');
+    sidebarLinks.forEach(link => {
+      link.classList.remove('active');
       if (link.getAttribute('href') === `#${current}`) {
-        link.classList.remove('text-slate-300');
-        link.classList.add('text-amber-400', 'border-b-2', 'border-amber-500');
+        link.classList.add('active');
       }
     });
   });

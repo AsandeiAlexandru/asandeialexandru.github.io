@@ -21,9 +21,17 @@ This document tracks completed refinements, upcoming enhancements, content addit
 
 ## ⚡ Priority 2: Technical & Interactive Features
 
-- [x] **Navigation Bar Alignment**:
-  - Removed "Contact" from the navigation links.
-  - Aligned navigation links to the left side directly next to the brand logo.
+- [x] **Desktop Left Sidebar Navigation**:
+  - Moved top navigation to a permanent fixed left sidebar on desktop (`lg:w-64 fixed left-0 top-0 bottom-0`) with vertical icons, active ScrollSpy indicators, and quick-action PDF resume and social links.
+  - Responsive mobile header with sliding drawer menu for small screens.
+- [x] **Portrait & Glowing Tech Orbit (Clean Look)**:
+  - Removed floating tech badges (`C++`, `Java`, etc.) overlaid on top of the portrait photo for a cleaner, high-end aesthetic.
+  - Portrait is positioned cleanly within the glowing orange orbital rings and ambient backdrop.
+- [x] **Core Competencies & Toolchain Breakdown**:
+  - Added official technology SVG icons in front of every skill item (Languages, Frameworks, Systems & Networking, Cloud & Tools).
+- [x] **Education Section Refinement**:
+  - Removed "B.S." in front of "Computer Science".
+  - Removed "Core Coursework" listing from both the website and resume.
 - [ ] **Light / Dark Mode Switcher**:
   - The site defaults to a sleek dark glassmorphic theme. Add a toggle button in the navbar allowing visitors to switch to a clean light theme.
 - [ ] **Project Deep-Dive Modals**:
