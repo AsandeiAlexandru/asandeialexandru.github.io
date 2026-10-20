@@ -21,6 +21,10 @@ This document tracks completed refinements, upcoming enhancements, content addit
 
 ## ⚡ Priority 2: Technical & Interactive Features
 
+- [x] **Privacy & SVG Standards**:
+  - Removed `alexandru_portrait.png`, `github_logo.png`, and `linkedin_logo.png` from Git tracking; retained files on local disk only.
+  - Replaced legacy PNG logos with official vector SVGs (`icons/github.svg` and `icons/linkedin.svg`).
+  - Added an intelligent monogram avatar fallback in the hero orbit for when the portrait is viewed on public deployments.
 - [x] **Streamlined Layout & Section Pruning**:
   - Moved the Quick Info Profile Card with signature into the Hero section directly beside the portrait.
   - Removed "Systems & Cloud" subtitle under the name (clean "Software Engineer" title).
