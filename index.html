@@ -41,7 +41,7 @@
   <script src="https://unpkg.com/lucide@latest"></script>
 
   <!-- Custom Stylesheet with Cache Buster -->
-  <link rel="stylesheet" href="css/style.css?v=5.0">
+  <link rel="stylesheet" href="css/style.css?v=6.0">
 </head>
 <body class="bg-[#07080a] text-slate-200 antialiased selection:bg-orange-500 selection:text-white relative overflow-x-hidden">
 
@@ -78,14 +78,6 @@
           <i data-lucide="home" class="w-4 h-4 text-amber-400"></i>
           <span>Home</span>
         </a>
-        <a href="#about" class="sidebar-nav-link flex items-center gap-3 px-3.5 py-2.5 rounded-xl text-xs uppercase tracking-wider font-semibold text-slate-300 hover:text-white hover:bg-orange-500/10 hover:border-l-2 hover:border-orange-500 transition-all">
-          <i data-lucide="user" class="w-4 h-4 text-amber-400"></i>
-          <span>About</span>
-        </a>
-        <a href="#domains" class="sidebar-nav-link flex items-center gap-3 px-3.5 py-2.5 rounded-xl text-xs uppercase tracking-wider font-semibold text-slate-300 hover:text-white hover:bg-orange-500/10 hover:border-l-2 hover:border-orange-500 transition-all">
-          <i data-lucide="layers" class="w-4 h-4 text-amber-400"></i>
-          <span>Domains</span>
-        </a>
         <a href="#skills" class="sidebar-nav-link flex items-center gap-3 px-3.5 py-2.5 rounded-xl text-xs uppercase tracking-wider font-semibold text-slate-300 hover:text-white hover:bg-orange-500/10 hover:border-l-2 hover:border-orange-500 transition-all">
           <i data-lucide="cpu" class="w-4 h-4 text-amber-400"></i>
           <span>Skills</span>
@@ -97,10 +89,6 @@
         <a href="#education" class="sidebar-nav-link flex items-center gap-3 px-3.5 py-2.5 rounded-xl text-xs uppercase tracking-wider font-semibold text-slate-300 hover:text-white hover:bg-orange-500/10 hover:border-l-2 hover:border-orange-500 transition-all">
           <i data-lucide="graduation-cap" class="w-4 h-4 text-amber-400"></i>
           <span>Education</span>
-        </a>
-        <a href="#contact" class="sidebar-nav-link flex items-center gap-3 px-3.5 py-2.5 rounded-xl text-xs uppercase tracking-wider font-semibold text-slate-300 hover:text-white hover:bg-orange-500/10 hover:border-l-2 hover:border-orange-500 transition-all">
-          <i data-lucide="send" class="w-4 h-4 text-amber-400"></i>
-          <span>Contact</span>
         </a>
       </nav>
     </div>
@@ -150,12 +138,9 @@
   <!-- Mobile Drawer Menu -->
   <div id="mobile-menu" class="hidden lg:hidden fixed inset-0 z-40 bg-black/80 backdrop-blur-md pt-20 px-6 flex flex-col gap-4">
     <a href="#home" class="mobile-nav-link text-base font-semibold text-slate-200 hover:text-amber-400 py-2 border-b border-slate-800">Home</a>
-    <a href="#about" class="mobile-nav-link text-base font-semibold text-slate-200 hover:text-amber-400 py-2 border-b border-slate-800">About</a>
-    <a href="#domains" class="mobile-nav-link text-base font-semibold text-slate-200 hover:text-amber-400 py-2 border-b border-slate-800">Domains</a>
     <a href="#skills" class="mobile-nav-link text-base font-semibold text-slate-200 hover:text-amber-400 py-2 border-b border-slate-800">Skills</a>
     <a href="#projects" class="mobile-nav-link text-base font-semibold text-slate-200 hover:text-amber-400 py-2 border-b border-slate-800">Projects</a>
     <a href="#education" class="mobile-nav-link text-base font-semibold text-slate-200 hover:text-amber-400 py-2 border-b border-slate-800">Education</a>
-    <a href="#contact" class="mobile-nav-link text-base font-semibold text-slate-200 hover:text-amber-400 py-2 border-b border-slate-800">Contact</a>
   </div>
 
   <!-- ========================================================= -->
@@ -178,48 +163,40 @@
             Alexandru <span class="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 via-amber-300 to-orange-500">Asandei</span>
           </h1>
 
-          <div class="text-xl sm:text-2xl font-bold text-slate-200 tracking-tight mb-5 flex items-center gap-2">
-            <span>Software Engineer</span>
-            <span class="text-amber-500 font-mono">|</span>
-            <span class="text-slate-400 font-medium text-lg sm:text-xl">Systems & Cloud</span>
+          <div class="text-xl sm:text-2xl font-bold text-amber-400 tracking-tight mb-6">
+            Software Engineer
           </div>
 
-          <p class="text-base sm:text-lg text-slate-300 font-light leading-relaxed mb-8 max-w-xl">
-            Computer Science student at the <strong class="text-white font-medium">Technical University of Cluj-Napoca (UTCN)</strong>. Focused on low-latency systems (C++, Win32, Winsock2), scalable cloud microservices (Java 21, FastAPI), and high-performance software engineering.
-          </p>
-
-          <!-- Buttons -->
-          <div class="flex flex-wrap items-center gap-4 mb-8">
-            <a href="#projects" class="inline-flex items-center gap-2 px-7 py-3 rounded-full bg-gradient-to-r from-orange-500 to-amber-500 hover:from-orange-600 hover:to-amber-600 text-black font-extrabold text-xs uppercase tracking-wider shadow-xl shadow-orange-500/25 hover:shadow-orange-500/40 transition-all hover:-translate-y-0.5">
-              <span>Explore Work</span>
-              <i data-lucide="arrow-right" class="w-4 h-4 text-black"></i>
-            </a>
-            <a href="Alexandru_Asandei_CV.pdf" download="Alexandru_Asandei_CV.pdf" class="inline-flex items-center gap-2 px-7 py-3 rounded-full glass-panel border border-slate-700 hover:border-amber-500 text-slate-200 hover:text-white font-semibold text-xs uppercase tracking-wider transition-all hover:-translate-y-0.5">
-              <i data-lucide="file-down" class="w-4 h-4 text-amber-400"></i>
-              <span>Download Resume</span>
-            </a>
-          </div>
-
-          <!-- Status & Socials -->
-          <div class="flex flex-wrap items-center gap-6 pt-4 border-t border-slate-800">
-            <div class="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-slate-300">
-              <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse"></span>
-              <span>Available for Internships</span>
+          <!-- Profile Quick Info Card with Signature (From replace_1.png) -->
+          <div class="glass-panel-orange p-6 sm:p-7 rounded-2xl relative overflow-hidden max-w-lg shadow-xl shadow-orange-500/5 mb-2">
+            <div class="space-y-3.5 text-xs sm:text-sm text-slate-300 mb-5">
+              <div class="flex items-center justify-between pb-3 border-b border-slate-800/80">
+                <span class="text-slate-400 flex items-center gap-2.5"><i data-lucide="user" class="w-4 h-4 text-amber-400"></i> Name:</span>
+                <span class="font-bold text-white">Alexandru Asandei</span>
+              </div>
+              <div class="flex items-center justify-between pb-3 border-b border-slate-800/80">
+                <span class="text-slate-400 flex items-center gap-2.5"><i data-lucide="mail" class="w-4 h-4 text-amber-400"></i> Email:</span>
+                <a href="mailto:asandeialexandru@gmail.com" class="font-mono text-amber-300 hover:underline">asandeialexandru@gmail.com</a>
+              </div>
+              <div class="flex items-center justify-between pb-3 border-b border-slate-800/80">
+                <span class="text-slate-400 flex items-center gap-2.5"><i data-lucide="map-pin" class="w-4 h-4 text-amber-400"></i> Location:</span>
+                <span class="text-white">Cluj-Napoca, Romania</span>
+              </div>
+              <div class="flex items-center justify-between pb-3 border-b border-slate-800/80">
+                <span class="text-slate-400 flex items-center gap-2.5"><i data-lucide="graduation-cap" class="w-4 h-4 text-amber-400"></i> Faculty:</span>
+                <span class="text-white font-medium">UTCN (Automation & CS)</span>
+              </div>
+              <div class="flex items-center justify-between">
+                <span class="text-slate-400 flex items-center gap-2.5"><i data-lucide="check-circle" class="w-4 h-4 text-emerald-400"></i> Availability:</span>
+                <span class="text-emerald-300 font-semibold flex items-center gap-1.5">
+                  <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                  Open for Roles
+                </span>
+              </div>
             </div>
 
-            <div class="flex items-center gap-4 text-sm text-slate-300">
-              <a href="https://github.com/AsandeiAlexandru" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors flex items-center gap-1.5">
-                <img src="github_logo.png" alt="GitHub" class="w-4 h-4 rounded-full object-contain">
-                <span>GitHub</span>
-              </a>
-              <a href="https://www.linkedin.com/in/alex-asandei-6b8263370/" target="_blank" rel="noopener noreferrer" class="hover:text-amber-400 transition-colors flex items-center gap-1.5">
-                <img src="linkedin_logo.png" alt="LinkedIn" class="w-4 h-4 rounded object-contain">
-                <span>LinkedIn</span>
-              </a>
-              <span class="flex items-center gap-1 text-slate-400">
-                <i data-lucide="map-pin" class="w-3.5 h-3.5 text-rose-400"></i>
-                <span>Cluj-Napoca</span>
-              </span>
+            <div class="text-right pt-2 border-t border-slate-800/80">
+              <span class="font-signature text-3xl text-amber-400/90 select-none">Alexandru Asandei</span>
             </div>
           </div>
         </div>
@@ -238,161 +215,6 @@
       </div>
     </section>
 
-    <!-- ABOUT ME & STATS SECTION -->
-    <section id="about" class="max-w-5xl mx-auto px-6 lg:px-12 py-16 border-t border-slate-800">
-      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
-        
-        <!-- Left: Bio & Metrics -->
-        <div class="lg:col-span-7">
-          <div class="flex items-center gap-2 text-xs font-mono uppercase tracking-widest text-amber-400 font-semibold mb-3">
-            <span class="w-6 h-0.5 bg-amber-500 inline-block"></span>
-            <span>ABOUT ME</span>
-          </div>
-
-          <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight leading-tight mb-6">
-            Building High-Performance Systems & Scalable Solutions
-          </h2>
-
-          <p class="text-sm sm:text-base text-slate-300 font-light leading-relaxed mb-8">
-            I am a third-year Computer Science student at the Technical University of Cluj-Napoca (English curriculum). My engineering foundation spans low-level Win32 socket programming with zero-allocation memory constraints, multi-tier microservices on GCP Cloud Run, and cross-platform desktop/mobile engines.
-          </p>
-
-          <!-- 4 Stat Counters -->
-          <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-8">
-            <div class="glass-panel p-4 rounded-xl text-center border-slate-800">
-              <div class="text-2xl sm:text-3xl font-extrabold text-amber-400 font-mono mb-1">&lt; 10ms</div>
-              <div class="text-[10px] sm:text-xs text-slate-400 uppercase tracking-wider font-semibold">Latency</div>
-              <div class="text-[10px] text-slate-500 mt-0.5">UDP Hot-Path</div>
-            </div>
-            <div class="glass-panel p-4 rounded-xl text-center border-slate-800">
-              <div class="text-2xl sm:text-3xl font-extrabold text-amber-400 font-mono mb-1">&lt; 5 MB</div>
-              <div class="text-[10px] sm:text-xs text-slate-400 uppercase tracking-wider font-semibold">RAM Footprint</div>
-              <div class="text-[10px] text-slate-500 mt-0.5">Zero Heap Alloc</div>
-            </div>
-            <div class="glass-panel p-4 rounded-xl text-center border-slate-800">
-              <div class="text-2xl sm:text-3xl font-extrabold text-amber-400 font-mono mb-1">4+</div>
-              <div class="text-[10px] sm:text-xs text-slate-400 uppercase tracking-wider font-semibold">Services</div>
-              <div class="text-[10px] text-slate-500 mt-0.5">GCP Cloud Run</div>
-            </div>
-            <div class="glass-panel p-4 rounded-xl text-center border-slate-800">
-              <div class="text-2xl sm:text-3xl font-extrabold text-amber-400 font-mono mb-1">Year 3/4</div>
-              <div class="text-[10px] sm:text-xs text-slate-400 uppercase tracking-wider font-semibold">CS Degree</div>
-              <div class="text-[10px] text-slate-500 mt-0.5">UTCN • Exp. 2028</div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Right: Profile Info Card with Signature -->
-        <div class="lg:col-span-5">
-          <div class="glass-panel-orange p-6 sm:p-8 rounded-2xl relative overflow-hidden">
-            <div class="space-y-4 text-xs sm:text-sm text-slate-300 mb-6">
-              <div class="flex items-center justify-between pb-3 border-b border-slate-800">
-                <span class="text-slate-400 flex items-center gap-2"><i data-lucide="user" class="w-4 h-4 text-amber-400"></i> Name:</span>
-                <span class="font-bold text-white">Alexandru Asandei</span>
-              </div>
-              <div class="flex items-center justify-between pb-3 border-b border-slate-800">
-                <span class="text-slate-400 flex items-center gap-2"><i data-lucide="mail" class="w-4 h-4 text-amber-400"></i> Email:</span>
-                <span class="font-mono text-amber-300">asandeialexandru@gmail.com</span>
-              </div>
-              <div class="flex items-center justify-between pb-3 border-b border-slate-800">
-                <span class="text-slate-400 flex items-center gap-2"><i data-lucide="map-pin" class="w-4 h-4 text-amber-400"></i> Location:</span>
-                <span class="text-white">Cluj-Napoca, Romania</span>
-              </div>
-              <div class="flex items-center justify-between pb-3 border-b border-slate-800">
-                <span class="text-slate-400 flex items-center gap-2"><i data-lucide="graduation-cap" class="w-4 h-4 text-amber-400"></i> Faculty:</span>
-                <span class="text-white font-medium">UTCN (Automation & CS)</span>
-              </div>
-              <div class="flex items-center justify-between">
-                <span class="text-slate-400 flex items-center gap-2"><i data-lucide="check-circle" class="w-4 h-4 text-emerald-400"></i> Availability:</span>
-                <span class="text-emerald-300 font-semibold">Open for Roles</span>
-              </div>
-            </div>
-
-            <div class="text-right pt-2 border-t border-slate-800">
-              <span class="font-signature text-3xl text-amber-400/80 select-none">Alexandru Asandei</span>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- CORE ENGINEERING DOMAINS -->
-    <section id="domains" class="max-w-5xl mx-auto px-6 lg:px-12 py-16 border-t border-slate-800">
-      <div class="text-center max-w-2xl mx-auto mb-12">
-        <div class="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-widest text-amber-400 font-semibold mb-2">
-          <span class="w-4 h-0.5 bg-amber-500 inline-block"></span>
-          <span>WHAT I DO</span>
-          <span class="w-4 h-0.5 bg-amber-500 inline-block"></span>
-        </div>
-        <h3 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">Core Engineering Domains</h3>
-      </div>
-
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-        
-        <div class="hover-card glass-panel p-6 rounded-2xl flex flex-col justify-between border-slate-800">
-          <div>
-            <div class="w-12 h-12 rounded-xl bg-gradient-to-tr from-orange-500/20 to-amber-500/10 border border-orange-500/30 flex items-center justify-center text-amber-400 mb-5">
-              <i data-lucide="cpu" class="w-6 h-6"></i>
-            </div>
-            <h4 class="text-lg font-bold text-white mb-2">Systems & Low-Level</h4>
-            <p class="text-xs text-slate-300 leading-relaxed mb-4 font-light">
-              High-throughput network daemons, Win32 API hardware emulation, Winsock2 raw UDP/TCP sockets, and zero-allocation hot paths in C++.
-            </p>
-          </div>
-          <div class="text-xs font-mono text-amber-400 font-semibold">
-            C++ • Win32 • Sockets
-          </div>
-        </div>
-
-        <div class="hover-card glass-panel p-6 rounded-2xl flex flex-col justify-between border-slate-800">
-          <div>
-            <div class="w-12 h-12 rounded-xl bg-gradient-to-tr from-orange-500/20 to-amber-500/10 border border-orange-500/30 flex items-center justify-center text-amber-400 mb-5">
-              <i data-lucide="server" class="w-6 h-6"></i>
-            </div>
-            <h4 class="text-lg font-bold text-white mb-2">Backend & Microservices</h4>
-            <p class="text-xs text-slate-300 leading-relaxed mb-4 font-light">
-              Distributed services orchestrated across Java 21 (Spring Boot) and Python (FastAPI), with mathematical normalization models and REST APIs.
-            </p>
-          </div>
-          <div class="text-xs font-mono text-amber-400 font-semibold">
-            Java 21 • Spring • FastAPI
-          </div>
-        </div>
-
-        <div class="hover-card glass-panel p-6 rounded-2xl flex flex-col justify-between border-slate-800">
-          <div>
-            <div class="w-12 h-12 rounded-xl bg-gradient-to-tr from-orange-500/20 to-amber-500/10 border border-orange-500/30 flex items-center justify-center text-amber-400 mb-5">
-              <i data-lucide="cloud" class="w-6 h-6"></i>
-            </div>
-            <h4 class="text-lg font-bold text-white mb-2">Cloud & Databases</h4>
-            <p class="text-xs text-slate-300 leading-relaxed mb-4 font-light">
-              Containerized multi-service deployment with Docker Compose on Google Cloud Run, backed by Neon Serverless PostgreSQL.
-            </p>
-          </div>
-          <div class="text-xs font-mono text-amber-400 font-semibold">
-            GCP • Docker • Postgres
-          </div>
-        </div>
-
-        <div class="hover-card glass-panel p-6 rounded-2xl flex flex-col justify-between border-slate-800">
-          <div>
-            <div class="w-12 h-12 rounded-xl bg-gradient-to-tr from-orange-500/20 to-amber-500/10 border border-orange-500/30 flex items-center justify-center text-amber-400 mb-5">
-              <i data-lucide="smartphone" class="w-6 h-6"></i>
-            </div>
-            <h4 class="text-lg font-bold text-white mb-2">Cross-Platform UI</h4>
-            <p class="text-xs text-slate-300 leading-relaxed mb-4 font-light">
-              Real-time multi-touch mobile clients in Flutter/Dart, virtual input studios (keyboards, analog joysticks), and desktop GUI state machines in Java Swing.
-            </p>
-          </div>
-          <div class="text-xs font-mono text-amber-400 font-semibold">
-            Flutter • Dart • Swing
-          </div>
-        </div>
-
-      </div>
-    </section>
-
     <!-- SKILLS & TECHNOLOGIES WITH OFFICIAL LOGOS IN FRONT OF BADGES -->
     <section id="skills" class="max-w-5xl mx-auto px-6 lg:px-12 py-16 border-t border-slate-800">
       <div class="mb-12">
@@ -403,116 +225,56 @@
         <h3 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">Skills & Technologies</h3>
       </div>
 
-      <!-- Split Layout: Proficiency Meters & 12 Tech Badges -->
-      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center mb-16">
-        
-        <!-- Left: Progress Bars -->
-        <div class="lg:col-span-5 space-y-6">
-          <div>
-            <div class="flex justify-between text-xs font-bold font-mono text-slate-200 mb-2">
-              <span>Low-Level Systems (C++ / Win32 / Sockets)</span>
-              <span class="text-amber-400">92%</span>
-            </div>
-            <div class="w-full bg-slate-900 rounded-full h-2.5 overflow-hidden border border-slate-800">
-              <div class="bg-gradient-to-r from-orange-500 to-amber-400 h-2.5 rounded-full" style="width: 92%"></div>
-            </div>
-          </div>
-
-          <div>
-            <div class="flex justify-between text-xs font-bold font-mono text-slate-200 mb-2">
-              <span>Backend & Microservices (Java 21, FastAPI, Spring)</span>
-              <span class="text-amber-400">90%</span>
-            </div>
-            <div class="w-full bg-slate-900 rounded-full h-2.5 overflow-hidden border border-slate-800">
-              <div class="bg-gradient-to-r from-orange-500 to-amber-400 h-2.5 rounded-full" style="width: 90%"></div>
-            </div>
-          </div>
-
-          <div>
-            <div class="flex justify-between text-xs font-bold font-mono text-slate-200 mb-2">
-              <span>Databases & SQL (PostgreSQL, Neon)</span>
-              <span class="text-amber-400">88%</span>
-            </div>
-            <div class="w-full bg-slate-900 rounded-full h-2.5 overflow-hidden border border-slate-800">
-              <div class="bg-gradient-to-r from-orange-500 to-amber-400 h-2.5 rounded-full" style="width: 88%"></div>
-            </div>
-          </div>
-
-          <div>
-            <div class="flex justify-between text-xs font-bold font-mono text-slate-200 mb-2">
-              <span>Cloud & DevOps (GCP Cloud Run, Docker Compose)</span>
-              <span class="text-amber-400">85%</span>
-            </div>
-            <div class="w-full bg-slate-900 rounded-full h-2.5 overflow-hidden border border-slate-800">
-              <div class="bg-gradient-to-r from-orange-500 to-amber-400 h-2.5 rounded-full" style="width: 85%"></div>
-            </div>
-          </div>
-
-          <div>
-            <div class="flex justify-between text-xs font-bold font-mono text-slate-200 mb-2">
-              <span>Mobile & UI (Flutter, Dart, React)</span>
-              <span class="text-amber-400">84%</span>
-            </div>
-            <div class="w-full bg-slate-900 rounded-full h-2.5 overflow-hidden border border-slate-800">
-              <div class="bg-gradient-to-r from-orange-500 to-amber-400 h-2.5 rounded-full" style="width: 84%"></div>
-            </div>
-          </div>
+      <!-- 12 Square Tech Cards with Official SVGs -->
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3.5 mb-14">
+        <div class="tech-square glass-panel p-4 rounded-xl flex flex-col items-center justify-center gap-2 border-slate-800">
+          <img src="icons/cplusplus.svg" alt="C++" class="w-8 h-8 object-contain">
+          <span class="text-xs font-mono font-medium text-slate-300">C++</span>
         </div>
-
-        <!-- Right: 12 Square Tech Cards with Official SVGs -->
-        <div class="lg:col-span-7">
-          <div class="grid grid-cols-3 sm:grid-cols-4 gap-3.5">
-            <div class="tech-square glass-panel p-4 rounded-xl flex flex-col items-center justify-center gap-2 border-slate-800">
-              <img src="icons/cplusplus.svg" alt="C++" class="w-8 h-8 object-contain">
-              <span class="text-xs font-mono font-medium text-slate-300">C++</span>
-            </div>
-            <div class="tech-square glass-panel p-4 rounded-xl flex flex-col items-center justify-center gap-2 border-slate-800">
-              <img src="icons/java.svg" alt="Java" class="w-8 h-8 object-contain">
-              <span class="text-xs font-mono font-medium text-slate-300">Java 21</span>
-            </div>
-            <div class="tech-square glass-panel p-4 rounded-xl flex flex-col items-center justify-center gap-2 border-slate-800">
-              <img src="icons/python.svg" alt="Python" class="w-8 h-8 object-contain">
-              <span class="text-xs font-mono font-medium text-slate-300">Python</span>
-            </div>
-            <div class="tech-square glass-panel p-4 rounded-xl flex flex-col items-center justify-center gap-2 border-slate-800">
-              <img src="icons/fastapi.svg" alt="FastAPI" class="w-8 h-8 object-contain">
-              <span class="text-xs font-mono font-medium text-slate-300">FastAPI</span>
-            </div>
-            <div class="tech-square glass-panel p-4 rounded-xl flex flex-col items-center justify-center gap-2 border-slate-800">
-              <img src="icons/spring.svg" alt="Spring Boot" class="w-8 h-8 object-contain">
-              <span class="text-xs font-mono font-medium text-slate-300">Spring Boot</span>
-            </div>
-            <div class="tech-square glass-panel p-4 rounded-xl flex flex-col items-center justify-center gap-2 border-slate-800">
-              <img src="icons/docker.svg" alt="Docker" class="w-8 h-8 object-contain">
-              <span class="text-xs font-mono font-medium text-slate-300">Docker</span>
-            </div>
-            <div class="tech-square glass-panel p-4 rounded-xl flex flex-col items-center justify-center gap-2 border-slate-800">
-              <img src="icons/postgresql.svg" alt="PostgreSQL" class="w-8 h-8 object-contain">
-              <span class="text-xs font-mono font-medium text-slate-300">PostgreSQL</span>
-            </div>
-            <div class="tech-square glass-panel p-4 rounded-xl flex flex-col items-center justify-center gap-2 border-slate-800">
-              <img src="icons/googlecloud.svg" alt="GCP" class="w-8 h-8 object-contain">
-              <span class="text-xs font-mono font-medium text-slate-300">GCP</span>
-            </div>
-            <div class="tech-square glass-panel p-4 rounded-xl flex flex-col items-center justify-center gap-2 border-slate-800">
-              <img src="icons/flutter.svg" alt="Flutter" class="w-8 h-8 object-contain">
-              <span class="text-xs font-mono font-medium text-slate-300">Flutter</span>
-            </div>
-            <div class="tech-square glass-panel p-4 rounded-xl flex flex-col items-center justify-center gap-2 border-slate-800">
-              <img src="icons/react.svg" alt="React" class="w-8 h-8 object-contain">
-              <span class="text-xs font-mono font-medium text-slate-300">React</span>
-            </div>
-            <div class="tech-square glass-panel p-4 rounded-xl flex flex-col items-center justify-center gap-2 border-slate-800">
-              <img src="icons/typescript.svg" alt="TypeScript" class="w-8 h-8 object-contain">
-              <span class="text-xs font-mono font-medium text-slate-300">TypeScript</span>
-            </div>
-            <div class="tech-square glass-panel p-4 rounded-xl flex flex-col items-center justify-center gap-2 border-slate-800">
-              <img src="icons/git.svg" alt="Git" class="w-8 h-8 object-contain">
-              <span class="text-xs font-mono font-medium text-slate-300">Git</span>
-            </div>
-          </div>
+        <div class="tech-square glass-panel p-4 rounded-xl flex flex-col items-center justify-center gap-2 border-slate-800">
+          <img src="icons/java.svg" alt="Java" class="w-8 h-8 object-contain">
+          <span class="text-xs font-mono font-medium text-slate-300">Java 21</span>
         </div>
-
+        <div class="tech-square glass-panel p-4 rounded-xl flex flex-col items-center justify-center gap-2 border-slate-800">
+          <img src="icons/python.svg" alt="Python" class="w-8 h-8 object-contain">
+          <span class="text-xs font-mono font-medium text-slate-300">Python</span>
+        </div>
+        <div class="tech-square glass-panel p-4 rounded-xl flex flex-col items-center justify-center gap-2 border-slate-800">
+          <img src="icons/fastapi.svg" alt="FastAPI" class="w-8 h-8 object-contain">
+          <span class="text-xs font-mono font-medium text-slate-300">FastAPI</span>
+        </div>
+        <div class="tech-square glass-panel p-4 rounded-xl flex flex-col items-center justify-center gap-2 border-slate-800">
+          <img src="icons/spring.svg" alt="Spring Boot" class="w-8 h-8 object-contain">
+          <span class="text-xs font-mono font-medium text-slate-300">Spring Boot</span>
+        </div>
+        <div class="tech-square glass-panel p-4 rounded-xl flex flex-col items-center justify-center gap-2 border-slate-800">
+          <img src="icons/docker.svg" alt="Docker" class="w-8 h-8 object-contain">
+          <span class="text-xs font-mono font-medium text-slate-300">Docker</span>
+        </div>
+        <div class="tech-square glass-panel p-4 rounded-xl flex flex-col items-center justify-center gap-2 border-slate-800">
+          <img src="icons/postgresql.svg" alt="PostgreSQL" class="w-8 h-8 object-contain">
+          <span class="text-xs font-mono font-medium text-slate-300">PostgreSQL</span>
+        </div>
+        <div class="tech-square glass-panel p-4 rounded-xl flex flex-col items-center justify-center gap-2 border-slate-800">
+          <img src="icons/googlecloud.svg" alt="GCP" class="w-8 h-8 object-contain">
+          <span class="text-xs font-mono font-medium text-slate-300">GCP</span>
+        </div>
+        <div class="tech-square glass-panel p-4 rounded-xl flex flex-col items-center justify-center gap-2 border-slate-800">
+          <img src="icons/flutter.svg" alt="Flutter" class="w-8 h-8 object-contain">
+          <span class="text-xs font-mono font-medium text-slate-300">Flutter</span>
+        </div>
+        <div class="tech-square glass-panel p-4 rounded-xl flex flex-col items-center justify-center gap-2 border-slate-800">
+          <img src="icons/react.svg" alt="React" class="w-8 h-8 object-contain">
+          <span class="text-xs font-mono font-medium text-slate-300">React</span>
+        </div>
+        <div class="tech-square glass-panel p-4 rounded-xl flex flex-col items-center justify-center gap-2 border-slate-800">
+          <img src="icons/typescript.svg" alt="TypeScript" class="w-8 h-8 object-contain">
+          <span class="text-xs font-mono font-medium text-slate-300">TypeScript</span>
+        </div>
+        <div class="tech-square glass-panel p-4 rounded-xl flex flex-col items-center justify-center gap-2 border-slate-800">
+          <img src="icons/git.svg" alt="Git" class="w-8 h-8 object-contain">
+          <span class="text-xs font-mono font-medium text-slate-300">Git</span>
+        </div>
       </div>
 
       <!-- CORE COMPETENCIES & TOOLCHAIN (Logos in front of every element!) -->
@@ -928,59 +690,6 @@
       </div>
     </section>
 
-    <!-- GET IN TOUCH -->
-    <section id="contact" class="max-w-5xl mx-auto px-6 lg:px-12 py-20 border-t border-slate-800">
-      <div class="glass-panel-orange rounded-3xl p-8 sm:p-14 relative overflow-hidden text-center max-w-3xl mx-auto">
-        <div class="ambient-orb w-[300px] h-[300px] bg-orange-600/20 top-[0px] left-[20%]"></div>
-        
-        <div class="relative z-10">
-          <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-orange-500 to-amber-500 mx-auto flex items-center justify-center text-black mb-6 shadow-xl shadow-orange-500/25">
-            <i data-lucide="send" class="w-7 h-7"></i>
-          </div>
-
-          <h3 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight mb-4">
-            Let's Build Something Great Together
-          </h3>
-
-          <p class="text-sm sm:text-base text-slate-300 font-light mb-8 max-w-xl mx-auto leading-relaxed">
-            I am actively looking for software engineering internships and junior engineering roles. Feel free to reach out directly or download my resume.
-          </p>
-
-          <div class="flex flex-wrap items-center justify-center gap-4 mb-8">
-            <a href="mailto:asandeialexandru@gmail.com" class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-gradient-to-r from-orange-500 to-amber-500 hover:from-orange-600 hover:to-amber-600 text-black font-extrabold text-xs uppercase tracking-wider shadow-xl shadow-orange-500/25 transition-all hover:-translate-y-0.5">
-              <i data-lucide="mail" class="w-4 h-4"></i>
-              <span>asandeialexandru@gmail.com</span>
-            </a>
-            <button class="copy-email-btn inline-flex items-center gap-2 px-5 py-3 rounded-full glass-panel text-slate-200 hover:text-white font-semibold text-xs uppercase tracking-wider transition-all hover:bg-slate-800">
-              <i data-lucide="copy" class="w-4 h-4 text-amber-400"></i>
-              <span>Copy Email</span>
-            </button>
-            <a href="Alexandru_Asandei_CV.pdf" download="Alexandru_Asandei_CV.pdf" class="inline-flex items-center gap-2 px-6 py-3 rounded-full glass-panel text-amber-300 hover:text-white font-semibold text-xs uppercase tracking-wider transition-all hover:bg-slate-800">
-              <i data-lucide="file-down" class="w-4 h-4"></i>
-              <span>Download Resume</span>
-            </a>
-          </div>
-
-          <div class="flex items-center justify-center gap-6 text-sm text-slate-400 pt-6 border-t border-slate-800">
-            <a href="https://github.com/AsandeiAlexandru" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors flex items-center gap-1.5">
-              <img src="github_logo.png" alt="GitHub" class="w-4 h-4 rounded-full object-contain">
-              <span>GitHub</span>
-            </a>
-            <span>•</span>
-            <a href="https://www.linkedin.com/in/alex-asandei-6b8263370/" target="_blank" rel="noopener noreferrer" class="hover:text-amber-400 transition-colors flex items-center gap-1.5">
-              <img src="linkedin_logo.png" alt="LinkedIn" class="w-4 h-4 rounded object-contain">
-              <span>LinkedIn</span>
-            </a>
-            <span>•</span>
-            <span class="flex items-center gap-1.5 text-slate-300 font-mono">
-              <i data-lucide="phone" class="w-3.5 h-3.5 text-amber-400"></i>
-              <span>+40 773 857 138</span>
-            </span>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <!-- FOOTER -->
     <footer class="relative z-10 border-t border-slate-800 py-8 text-center text-xs text-slate-500">
       <div class="max-w-5xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
@@ -989,6 +698,12 @@
           <span>© <span id="current-year">2026</span> Alexandru Asandei. All rights reserved.</span>
         </div>
         <div class="flex items-center gap-4 text-slate-400">
+          <a href="mailto:asandeialexandru@gmail.com" class="hover:text-amber-400 transition-colors">asandeialexandru@gmail.com</a>
+          <span>•</span>
+          <a href="https://github.com/AsandeiAlexandru" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">GitHub</a>
+          <span>•</span>
+          <a href="https://www.linkedin.com/in/alex-asandei-6b8263370/" target="_blank" rel="noopener noreferrer" class="hover:text-amber-400 transition-colors">LinkedIn</a>
+          <span>•</span>
           <a href="#home" class="hover:text-amber-400 transition-colors">Back to top ↑</a>
         </div>
       </div>
@@ -1005,6 +720,6 @@
   <script>
     lucide.createIcons();
   </script>
-  <script src="js/main.js?v=5.0"></script>
+  <script src="js/main.js?v=6.0"></script>
 </body>
 </html>

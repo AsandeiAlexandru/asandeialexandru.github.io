@@ -21,6 +21,12 @@ This document tracks completed refinements, upcoming enhancements, content addit
 
 ## ⚡ Priority 2: Technical & Interactive Features
 
+- [x] **Streamlined Layout & Section Pruning**:
+  - Moved the Quick Info Profile Card with signature into the Hero section directly beside the portrait.
+  - Removed "Systems & Cloud" subtitle under the name (clean "Software Engineer" title).
+  - Pruned redundant About Me narrative and domain cards for a faster, ultra-clean reading experience.
+  - Removed skill percentage progress bars; expanded the 12 core tech square badges into a full-width responsive grid.
+  - Simplified bottom footer and removed oversized contact callout card.
 - [x] **Desktop Left Sidebar Navigation**:
   - Moved top navigation to a permanent fixed left sidebar on desktop (`lg:w-64 fixed left-0 top-0 bottom-0`) with vertical icons, active ScrollSpy indicators, and quick-action PDF resume and social links.
   - Responsive mobile header with sliding drawer menu for small screens.
