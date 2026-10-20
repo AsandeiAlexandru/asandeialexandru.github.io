@@ -21,14 +21,15 @@
       theme: {
         extend: {
           colors: {
-            brand: {
-              50: '#f0f7ff',
-              100: '#e0effe',
-              500: '#3b82f6',
-              600: '#2563eb',
-              700: '#1d4ed8',
-              800: '#1e40af',
-              900: '#1e3a8a',
+            amberBrand: {
+              400: '#fbbf24',
+              500: '#f59e0b',
+              600: '#d97706',
+            },
+            orangeBrand: {
+              400: '#fb923c',
+              500: '#ff6b00',
+              600: '#ea580c',
             }
           }
         }
@@ -39,47 +40,48 @@
   <!-- Lucide Icons -->
   <script src="https://unpkg.com/lucide@latest"></script>
 
-  <!-- Custom Stylesheet -->
-  <link rel="stylesheet" href="css/style.css">
+  <!-- Custom Stylesheet with Cache Buster -->
+  <link rel="stylesheet" href="css/style.css?v=3.0">
 </head>
-<body class="bg-[#090d16] text-slate-200 antialiased selection:bg-blue-600 selection:text-white relative overflow-x-hidden">
+<body class="bg-[#0b0c10] text-slate-200 antialiased selection:bg-orange-500 selection:text-white relative overflow-x-hidden">
 
-  <!-- Ambient Glow Effects -->
-  <div class="ambient-orb w-[500px] h-[500px] bg-blue-600/15 top-[-100px] left-[-150px]"></div>
-  <div class="ambient-orb w-[600px] h-[600px] bg-indigo-600/15 top-[30%] right-[-200px]"></div>
-  <div class="ambient-orb w-[500px] h-[500px] bg-sky-500/10 bottom-[10%] left-[-100px]"></div>
+  <!-- Ambient Glow Background Effects -->
+  <div class="ambient-orb w-[550px] h-[550px] bg-orange-600/15 top-[-100px] left-[-150px]"></div>
+  <div class="ambient-orb w-[650px] h-[650px] bg-amber-600/15 top-[35%] right-[-200px]"></div>
+  <div class="ambient-orb w-[500px] h-[500px] bg-orange-500/10 bottom-[10%] left-[-100px]"></div>
 
   <!-- Background Grid Pattern -->
   <div class="fixed inset-0 bg-grid-pattern pointer-events-none z-0"></div>
 
-  <!-- Navigation Bar -->
+  <!-- HEADER / NAVIGATION (Left-Aligned Links as Requested) -->
   <header class="fixed top-0 left-0 right-0 z-50 glass-nav">
     <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
       
-      <!-- Left side: Brand Logo + Navigation Links aligned together -->
+      <!-- Brand Logo + Navigation Links on the Left -->
       <div class="flex items-center gap-8">
-        <a href="#" class="flex items-center gap-2 group shrink-0">
-          <span class="w-8 h-8 rounded-lg bg-gradient-to-tr from-blue-600 to-indigo-500 flex items-center justify-center font-mono font-bold text-white text-sm shadow-md shadow-blue-500/20 group-hover:scale-105 transition-transform">
+        <a href="#" class="flex items-center gap-2.5 group shrink-0">
+          <span class="w-8 h-8 rounded-lg bg-gradient-to-tr from-orange-600 to-amber-500 flex items-center justify-center font-mono font-bold text-black text-sm shadow-md shadow-orange-500/20 group-hover:scale-105 transition-transform">
             AA
           </span>
-          <span class="font-bold text-slate-100 tracking-tight group-hover:text-blue-400 transition-colors">
+          <span class="font-bold text-white tracking-tight group-hover:text-amber-400 transition-colors">
             Alexandru Asandei
           </span>
         </a>
 
-        <!-- Desktop Nav Links (positioned on the left side) -->
+        <!-- Desktop Nav Links (Left aligned, Contact removed) -->
         <nav class="hidden md:flex items-center gap-6">
-          <a href="#about" class="desktop-nav-link text-sm font-medium text-slate-300 hover:text-white transition-colors relative py-1">About</a>
-          <a href="#projects" class="desktop-nav-link text-sm font-medium text-slate-300 hover:text-white transition-colors relative py-1">Projects</a>
-          <a href="#skills" class="desktop-nav-link text-sm font-medium text-slate-300 hover:text-white transition-colors relative py-1">Skills</a>
-          <a href="#education" class="desktop-nav-link text-sm font-medium text-slate-300 hover:text-white transition-colors relative py-1">Education</a>
+          <a href="#home" class="desktop-nav-link text-xs uppercase tracking-wider font-semibold text-slate-300 hover:text-amber-400 transition-colors py-1">Home</a>
+          <a href="#about" class="desktop-nav-link text-xs uppercase tracking-wider font-semibold text-slate-300 hover:text-amber-400 transition-colors py-1">About</a>
+          <a href="#domains" class="desktop-nav-link text-xs uppercase tracking-wider font-semibold text-slate-300 hover:text-amber-400 transition-colors py-1">Domains</a>
+          <a href="#skills" class="desktop-nav-link text-xs uppercase tracking-wider font-semibold text-slate-300 hover:text-amber-400 transition-colors py-1">Skills</a>
+          <a href="#projects" class="desktop-nav-link text-xs uppercase tracking-wider font-semibold text-slate-300 hover:text-amber-400 transition-colors py-1">Projects</a>
         </nav>
       </div>
 
-      <!-- Right side: Action Button -->
+      <!-- Right Side Action Button -->
       <div class="hidden md:flex items-center gap-3">
-        <a href="Alexandru_Asandei_CV.pdf" download="Alexandru_Asandei_CV.pdf" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-600 hover:bg-blue-500 text-white text-xs font-semibold shadow-lg shadow-blue-600/25 transition-all hover:shadow-blue-500/35 hover:-translate-y-0.5">
-          <i data-lucide="file-down" class="w-4 h-4"></i>
+        <a href="Alexandru_Asandei_CV.pdf" download="Alexandru_Asandei_CV.pdf" class="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-orange-500/40 bg-orange-500/10 hover:bg-orange-500 text-orange-300 hover:text-black text-xs font-bold tracking-wide uppercase shadow-lg shadow-orange-500/15 transition-all hover:shadow-orange-500/30 hover:-translate-y-0.5">
+          <i data-lucide="file-down" class="w-3.5 h-3.5"></i>
           <span>Resume</span>
         </a>
       </div>
@@ -92,11 +94,12 @@
 
     <!-- Mobile Dropdown Menu -->
     <div id="mobile-menu" class="hidden md:hidden glass-panel border-t border-slate-800 px-6 py-4 flex flex-col gap-3">
-      <a href="#about" class="mobile-nav-link text-sm text-slate-300 hover:text-blue-400 py-1">About</a>
-      <a href="#projects" class="mobile-nav-link text-sm text-slate-300 hover:text-blue-400 py-1">Projects</a>
-      <a href="#skills" class="mobile-nav-link text-sm text-slate-300 hover:text-blue-400 py-1">Skills</a>
-      <a href="#education" class="mobile-nav-link text-sm text-slate-300 hover:text-blue-400 py-1">Education</a>
-      <a href="Alexandru_Asandei_CV.pdf" download="Alexandru_Asandei_CV.pdf" class="inline-flex items-center justify-center gap-2 mt-2 px-4 py-2 rounded-lg bg-blue-600 text-white text-xs font-semibold">
+      <a href="#home" class="mobile-nav-link text-sm text-slate-300 hover:text-amber-400 py-1">Home</a>
+      <a href="#about" class="mobile-nav-link text-sm text-slate-300 hover:text-amber-400 py-1">About</a>
+      <a href="#domains" class="mobile-nav-link text-sm text-slate-300 hover:text-amber-400 py-1">Domains</a>
+      <a href="#skills" class="mobile-nav-link text-sm text-slate-300 hover:text-amber-400 py-1">Skills</a>
+      <a href="#projects" class="mobile-nav-link text-sm text-slate-300 hover:text-amber-400 py-1">Projects</a>
+      <a href="Alexandru_Asandei_CV.pdf" download="Alexandru_Asandei_CV.pdf" class="inline-flex items-center justify-center gap-2 mt-2 px-4 py-2 rounded-full bg-gradient-to-r from-orange-500 to-amber-500 text-black text-xs font-bold">
         <i data-lucide="file-down" class="w-4 h-4"></i>
         <span>Download Resume</span>
       </a>
@@ -105,93 +108,99 @@
 
   <main class="relative z-10 pt-28">
 
-    <!-- HERO SECTION -->
-    <section id="about" class="max-w-6xl mx-auto px-6 py-12 md:py-20">
+    <!-- HERO SECTION (Matching DevFusion Template Layout) -->
+    <section id="home" class="max-w-6xl mx-auto px-6 py-12 md:py-20">
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
         
-        <!-- Left Column: Bio & Actions -->
+        <!-- Left Column: Intro & Calls-to-Action -->
         <div class="lg:col-span-7">
-          <div class="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-widest text-blue-400 font-semibold mb-4">
-            <span class="w-6 h-0.5 bg-blue-500 inline-block"></span>
-            <span>Hello, I'm</span>
+          <div class="flex items-center gap-2 text-xs font-mono uppercase tracking-widest text-amber-400 font-semibold mb-4">
+            <span class="w-6 h-0.5 bg-amber-500 inline-block"></span>
+            <span>HELLO, I'M</span>
           </div>
 
-          <h1 class="text-4xl sm:text-6xl font-extrabold text-white tracking-tight leading-tight mb-4">
-            Alexandru <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-sky-300 to-indigo-400">Asandei</span>.
+          <h1 class="text-4xl sm:text-6xl font-extrabold text-white tracking-tight leading-tight mb-2">
+            Alexandru <span class="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 via-amber-300 to-orange-500">Asandei</span>
           </h1>
 
-          <p class="text-lg sm:text-xl text-slate-300 font-light leading-relaxed mb-8">
-            Computer Science student at the <strong class="text-white font-medium">Technical University of Cluj-Napoca (UTCN)</strong>.
-          </p>
-
-          <!-- CTA Buttons -->
-          <div class="flex flex-wrap items-center gap-4 mb-10">
-            <a href="#projects" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-medium text-sm shadow-xl shadow-blue-600/30 hover:shadow-blue-500/40 transition-all hover:-translate-y-0.5">
-              <span>Explore Projects</span>
-              <i data-lucide="arrow-right" class="w-4 h-4"></i>
-            </a>
-            <a href="Alexandru_Asandei_CV.pdf" download="Alexandru_Asandei_CV.pdf" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl glass-panel text-slate-200 hover:text-white hover:bg-slate-800/80 font-medium text-sm transition-all hover:-translate-y-0.5">
-              <i data-lucide="file-down" class="w-4 h-4 text-blue-400"></i>
-              <span>Download Resume</span>
-            </a>
-            <button class="copy-email-btn inline-flex items-center gap-2 px-5 py-3 rounded-xl glass-panel text-slate-300 hover:text-white font-medium text-sm transition-all">
-              <i data-lucide="mail" class="w-4 h-4 text-emerald-400"></i>
-              <span>Copy Email</span>
-            </button>
+          <div class="text-xl sm:text-2xl font-bold text-slate-200 tracking-tight mb-5 flex items-center gap-2">
+            <span>Software Engineer</span>
+            <span class="text-amber-500 font-mono">|</span>
+            <span class="text-slate-400 font-medium text-lg sm:text-xl">Systems & Cloud</span>
           </div>
 
-          <!-- Social Proof & External Links -->
-          <div class="flex items-center gap-6 text-sm text-slate-300">
-            <a href="https://github.com/AsandeiAlexandru" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 hover:text-white transition-colors group">
-              <img src="github_logo.png" alt="GitHub" class="w-5 h-5 rounded-full object-contain">
-              <span>GitHub</span>
+          <p class="text-base sm:text-lg text-slate-300 font-light leading-relaxed mb-8 max-w-xl">
+            Computer Science student at the <strong class="text-white font-medium">Technical University of Cluj-Napoca (UTCN)</strong>. Focused on low-latency systems (C++, Win32, Winsock2), scalable cloud microservices (Java 21, FastAPI), and high-performance software engineering.
+          </p>
+
+          <!-- CTA Buttons (Matching Template Pills) -->
+          <div class="flex flex-wrap items-center gap-4 mb-8">
+            <a href="#projects" class="inline-flex items-center gap-2 px-7 py-3 rounded-full bg-gradient-to-r from-orange-500 to-amber-500 hover:from-orange-600 hover:to-amber-600 text-black font-extrabold text-xs uppercase tracking-wider shadow-xl shadow-orange-500/25 hover:shadow-orange-500/40 transition-all hover:-translate-y-0.5">
+              <span>Explore Work</span>
+              <i data-lucide="arrow-right" class="w-4 h-4 text-black"></i>
             </a>
-            <a href="https://www.linkedin.com/in/alex-asandei-6b8263370/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 hover:text-blue-400 transition-colors group">
-              <img src="linkedin_logo.png" alt="LinkedIn" class="w-5 h-5 rounded object-contain">
-              <span>LinkedIn</span>
+            <a href="Alexandru_Asandei_CV.pdf" download="Alexandru_Asandei_CV.pdf" class="inline-flex items-center gap-2 px-7 py-3 rounded-full glass-panel border border-slate-700 hover:border-amber-500 text-slate-200 hover:text-white font-semibold text-xs uppercase tracking-wider transition-all hover:-translate-y-0.5">
+              <i data-lucide="file-down" class="w-4 h-4 text-amber-400"></i>
+              <span>Download Resume</span>
             </a>
-            <span class="inline-flex items-center gap-1.5 text-slate-400">
-              <i data-lucide="map-pin" class="w-4 h-4 text-rose-400"></i>
-              <span>Cluj-Napoca, Romania</span>
-            </span>
+          </div>
+
+          <!-- Status Indicator & Social Links Row -->
+          <div class="flex flex-wrap items-center gap-6 pt-4 border-t border-slate-800/80">
+            <div class="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-slate-300">
+              <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse"></span>
+              <span>Available for Internships</span>
+            </div>
+
+            <div class="flex items-center gap-3">
+              <a href="https://github.com/AsandeiAlexandru" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-full glass-panel flex items-center justify-center hover:border-amber-500 transition-colors" title="GitHub">
+                <img src="github_logo.png" alt="GitHub" class="w-4 h-4 rounded-full object-contain">
+              </a>
+              <a href="https://www.linkedin.com/in/alex-asandei-6b8263370/" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-full glass-panel flex items-center justify-center hover:border-amber-500 transition-colors" title="LinkedIn">
+                <img src="linkedin_logo.png" alt="LinkedIn" class="w-4 h-4 rounded object-contain">
+              </a>
+              <button class="copy-email-btn w-9 h-9 rounded-full glass-panel flex items-center justify-center hover:border-amber-500 transition-colors text-slate-300 hover:text-white" title="Copy Email">
+                <i data-lucide="mail" class="w-4 h-4 text-amber-400"></i>
+              </button>
+            </div>
           </div>
         </div>
 
-        <!-- Right Column: Cutout Portrait with Glowing Tech Ring & Floating Badges -->
+        <!-- Right Column: Portrait Inside Glowing Circular Orbit (Matching DevFusion Template) -->
         <div class="lg:col-span-5 flex justify-center relative select-none">
           
-          <!-- Outer Tech Orbit Rings & Ambient Glow -->
-          <div class="w-[300px] h-[300px] sm:w-[360px] sm:h-[360px] tech-orbit"></div>
-          <div class="w-[240px] h-[240px] sm:w-[280px] sm:h-[280px] tech-orbit border-indigo-500/25"></div>
-          <div class="absolute w-[280px] h-[280px] rounded-full bg-blue-600/15 filter blur-3xl pointer-events-none"></div>
+          <!-- Concentric Orbit Rings & Ambient Glow -->
+          <div class="w-[310px] h-[310px] sm:w-[380px] sm:h-[380px] tech-orbit"></div>
+          <div class="w-[370px] h-[370px] sm:w-[440px] sm:h-[440px] tech-orbit-outer"></div>
+          <div class="absolute w-[280px] h-[280px] rounded-full bg-orange-500/20 filter blur-3xl pointer-events-none"></div>
 
           <!-- Cutout Portrait -->
           <div class="relative z-10 pt-4 flex items-end justify-center">
-            <img src="alexandru_portrait.png" alt="Alexandru Asandei" class="w-56 sm:w-64 lg:w-72 h-auto object-contain drop-shadow-[0_20px_35px_rgba(59,130,246,0.35)] filter contrast-[1.03]">
+            <img src="alexandru_portrait.png" alt="Alexandru Asandei" class="w-60 sm:w-72 lg:w-80 h-auto object-contain drop-shadow-[0_20px_40px_rgba(245,158,11,0.35)] filter contrast-[1.04]">
           </div>
 
           <!-- Floating Tech Badge 1: C++ (Top-Left) -->
-          <div class="floating-badge-1 absolute top-2 -left-2 sm:left-4 z-20 px-3 py-1.5 rounded-full glass-panel border border-blue-500/30 text-xs font-mono text-blue-300 shadow-xl shadow-blue-950/50 flex items-center gap-1.5 backdrop-blur-md">
-            <span class="w-2 h-2 rounded-full bg-blue-400"></span>
-            <span>C++</span>
+          <div class="floating-badge-1 absolute top-2 -left-2 sm:left-2 z-20 px-3.5 py-1.5 rounded-full glass-panel border border-orange-500/30 text-xs font-mono text-slate-200 shadow-xl shadow-black/80 flex items-center gap-2 backdrop-blur-md">
+            <img src="icons/cplusplus.svg" alt="C++" class="w-4 h-4 object-contain">
+            <span class="font-bold">C++</span>
           </div>
 
           <!-- Floating Tech Badge 2: Java 21 / Spring (Top-Right) -->
-          <div class="floating-badge-2 absolute top-6 -right-2 sm:right-4 z-20 px-3 py-1.5 rounded-full glass-panel border border-indigo-500/30 text-xs font-mono text-indigo-300 shadow-xl shadow-indigo-950/50 flex items-center gap-1.5 backdrop-blur-md">
-            <span class="w-2 h-2 rounded-full bg-indigo-400"></span>
-            <span>Java 21</span>
+          <div class="floating-badge-2 absolute top-6 -right-2 sm:right-2 z-20 px-3.5 py-1.5 rounded-full glass-panel border border-orange-500/30 text-xs font-mono text-slate-200 shadow-xl shadow-black/80 flex items-center gap-2 backdrop-blur-md">
+            <img src="icons/java.svg" alt="Java" class="w-4 h-4 object-contain">
+            <span class="font-bold">Java 21</span>
           </div>
 
           <!-- Floating Tech Badge 3: Python / FastAPI (Bottom-Left) -->
-          <div class="floating-badge-3 absolute bottom-8 -left-3 sm:left-2 z-20 px-3 py-1.5 rounded-full glass-panel border border-emerald-500/30 text-xs font-mono text-emerald-300 shadow-xl shadow-emerald-950/50 flex items-center gap-1.5 backdrop-blur-md">
-            <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
-            <span>FastAPI</span>
+          <div class="floating-badge-3 absolute bottom-8 -left-3 sm:left-0 z-20 px-3.5 py-1.5 rounded-full glass-panel border border-orange-500/30 text-xs font-mono text-slate-200 shadow-xl shadow-black/80 flex items-center gap-2 backdrop-blur-md">
+            <img src="icons/python.svg" alt="Python" class="w-4 h-4 object-contain">
+            <span class="font-bold">FastAPI</span>
           </div>
 
-          <!-- Floating Tech Badge 4: Win32 & Sockets (Bottom-Right) -->
-          <div class="floating-badge-4 absolute bottom-12 -right-3 sm:right-2 z-20 px-3 py-1.5 rounded-full glass-panel border border-sky-500/30 text-xs font-mono text-sky-300 shadow-xl shadow-sky-950/50 flex items-center gap-1.5 backdrop-blur-md">
-            <span class="w-2 h-2 rounded-full bg-sky-400"></span>
-            <span>Win32 & Sockets</span>
+          <!-- Floating Tech Badge 4: GCP & Docker (Bottom-Right) -->
+          <div class="floating-badge-4 absolute bottom-12 -right-3 sm:right-0 z-20 px-3.5 py-1.5 rounded-full glass-panel border border-orange-500/30 text-xs font-mono text-slate-200 shadow-xl shadow-black/80 flex items-center gap-2 backdrop-blur-md">
+            <img src="icons/googlecloud.svg" alt="GCP" class="w-4 h-4 object-contain">
+            <span class="font-bold">GCP & Docker</span>
           </div>
 
         </div>
@@ -199,20 +208,320 @@
       </div>
     </section>
 
-    <!-- PROJECTS SECTION -->
-    <section id="projects" class="max-w-6xl mx-auto px-6 py-16">
+    <!-- ABOUT ME & STATS SECTION (Matching Template Structure) -->
+    <section id="about" class="max-w-6xl mx-auto px-6 py-16 border-t border-slate-800/80">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+        
+        <!-- Left: Bio & Metric Grid -->
+        <div class="lg:col-span-7">
+          <div class="flex items-center gap-2 text-xs font-mono uppercase tracking-widest text-amber-400 font-semibold mb-3">
+            <span class="w-6 h-0.5 bg-amber-500 inline-block"></span>
+            <span>ABOUT ME</span>
+          </div>
+
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight leading-tight mb-6">
+            Building High-Performance Systems & Scalable Solutions
+          </h2>
+
+          <p class="text-sm sm:text-base text-slate-300 font-light leading-relaxed mb-8">
+            I am a third-year Computer Science student at the Technical University of Cluj-Napoca (English curriculum). My engineering foundation spans low-level Win32 socket programming with zero-allocation memory constraints, multi-tier microservices on GCP Cloud Run, and cross-platform desktop/mobile engines.
+          </p>
+
+          <!-- 4 Stat Counters (Matching Template 6+, 40+, 25+, 100%) -->
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-8">
+            <div class="glass-panel p-4 rounded-xl text-center border-slate-800">
+              <div class="text-2xl sm:text-3xl font-extrabold text-amber-400 font-mono mb-1">&lt; 10ms</div>
+              <div class="text-[10px] sm:text-xs text-slate-400 uppercase tracking-wider font-semibold">Latency</div>
+              <div class="text-[10px] text-slate-500 mt-0.5">UDP Hot-Path</div>
+            </div>
+            <div class="glass-panel p-4 rounded-xl text-center border-slate-800">
+              <div class="text-2xl sm:text-3xl font-extrabold text-amber-400 font-mono mb-1">&lt; 5 MB</div>
+              <div class="text-[10px] sm:text-xs text-slate-400 uppercase tracking-wider font-semibold">RAM Footprint</div>
+              <div class="text-[10px] text-slate-500 mt-0.5">Zero Heap Alloc</div>
+            </div>
+            <div class="glass-panel p-4 rounded-xl text-center border-slate-800">
+              <div class="text-2xl sm:text-3xl font-extrabold text-amber-400 font-mono mb-1">4+</div>
+              <div class="text-[10px] sm:text-xs text-slate-400 uppercase tracking-wider font-semibold">Services</div>
+              <div class="text-[10px] text-slate-500 mt-0.5">GCP Cloud Run</div>
+            </div>
+            <div class="glass-panel p-4 rounded-xl text-center border-slate-800">
+              <div class="text-2xl sm:text-3xl font-extrabold text-amber-400 font-mono mb-1">Year 3/4</div>
+              <div class="text-[10px] sm:text-xs text-slate-400 uppercase tracking-wider font-semibold">CS Degree</div>
+              <div class="text-[10px] text-slate-500 mt-0.5">UTCN • Exp. 2028</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Profile Details Card (Matching Template's Right Side Info Card) -->
+        <div class="lg:col-span-5">
+          <div class="glass-panel-orange p-6 sm:p-8 rounded-2xl relative overflow-hidden">
+            <div class="space-y-4 text-xs sm:text-sm text-slate-300 mb-6">
+              <div class="flex items-center justify-between pb-3 border-b border-slate-800">
+                <span class="text-slate-400 flex items-center gap-2"><i data-lucide="user" class="w-4 h-4 text-amber-400"></i> Name:</span>
+                <span class="font-bold text-white">Alexandru Asandei</span>
+              </div>
+              <div class="flex items-center justify-between pb-3 border-b border-slate-800">
+                <span class="text-slate-400 flex items-center gap-2"><i data-lucide="mail" class="w-4 h-4 text-amber-400"></i> Email:</span>
+                <span class="font-mono text-amber-300">asandeialexandru@gmail.com</span>
+              </div>
+              <div class="flex items-center justify-between pb-3 border-b border-slate-800">
+                <span class="text-slate-400 flex items-center gap-2"><i data-lucide="map-pin" class="w-4 h-4 text-amber-400"></i> Location:</span>
+                <span class="text-white">Cluj-Napoca, Romania</span>
+              </div>
+              <div class="flex items-center justify-between pb-3 border-b border-slate-800">
+                <span class="text-slate-400 flex items-center gap-2"><i data-lucide="graduation-cap" class="w-4 h-4 text-amber-400"></i> Faculty:</span>
+                <span class="text-white font-medium">UTCN (Automation & CS)</span>
+              </div>
+              <div class="flex items-center justify-between">
+                <span class="text-slate-400 flex items-center gap-2"><i data-lucide="check-circle" class="w-4 h-4 text-emerald-400"></i> Availability:</span>
+                <span class="text-emerald-300 font-semibold">Open for Roles</span>
+              </div>
+            </div>
+
+            <!-- Stylized Signature Accent -->
+            <div class="text-right pt-2 border-t border-slate-800/80">
+              <span class="font-signature text-3xl text-amber-400/80 select-none">Alexandru Asandei</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CORE ENGINEERING DOMAINS (Matching "My Services" in Template) -->
+    <section id="domains" class="max-w-6xl mx-auto px-6 py-16">
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <div class="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-widest text-amber-400 font-semibold mb-2">
+          <span class="w-4 h-0.5 bg-amber-500 inline-block"></span>
+          <span>WHAT I DO</span>
+          <span class="w-4 h-0.5 bg-amber-500 inline-block"></span>
+        </div>
+        <h3 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">Core Engineering Domains</h3>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        
+        <!-- Domain 1 -->
+        <div class="hover-card glass-panel p-6 rounded-2xl flex flex-col justify-between border-slate-800">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-gradient-to-tr from-orange-500/20 to-amber-500/10 border border-orange-500/30 flex items-center justify-center text-amber-400 mb-5">
+              <i data-lucide="cpu" class="w-6 h-6"></i>
+            </div>
+            <h4 class="text-lg font-bold text-white mb-2">Systems & Low-Level</h4>
+            <p class="text-xs text-slate-300 leading-relaxed mb-4 font-light">
+              High-throughput network daemons, Win32 API hardware emulation, Winsock2 raw UDP/TCP sockets, and zero-allocation hot paths in C++.
+            </p>
+          </div>
+          <div class="text-xs font-mono text-amber-400 font-semibold flex items-center gap-1">
+            <span>C++ • Win32 • Sockets</span>
+          </div>
+        </div>
+
+        <!-- Domain 2 -->
+        <div class="hover-card glass-panel p-6 rounded-2xl flex flex-col justify-between border-slate-800">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-gradient-to-tr from-orange-500/20 to-amber-500/10 border border-orange-500/30 flex items-center justify-center text-amber-400 mb-5">
+              <i data-lucide="server" class="w-6 h-6"></i>
+            </div>
+            <h4 class="text-lg font-bold text-white mb-2">Backend & Microservices</h4>
+            <p class="text-xs text-slate-300 leading-relaxed mb-4 font-light">
+              Distributed services orchestrated across Java 21 (Spring Boot) and Python (FastAPI), with mathematical normalization models and REST APIs.
+            </p>
+          </div>
+          <div class="text-xs font-mono text-amber-400 font-semibold flex items-center gap-1">
+            <span>Java 21 • Spring • FastAPI</span>
+          </div>
+        </div>
+
+        <!-- Domain 3 -->
+        <div class="hover-card glass-panel p-6 rounded-2xl flex flex-col justify-between border-slate-800">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-gradient-to-tr from-orange-500/20 to-amber-500/10 border border-orange-500/30 flex items-center justify-center text-amber-400 mb-5">
+              <i data-lucide="cloud" class="w-6 h-6"></i>
+            </div>
+            <h4 class="text-lg font-bold text-white mb-2">Cloud & Databases</h4>
+            <p class="text-xs text-slate-300 leading-relaxed mb-4 font-light">
+              Containerized multi-service deployment with Docker Compose on Google Cloud Run, backed by Neon Serverless PostgreSQL.
+            </p>
+          </div>
+          <div class="text-xs font-mono text-amber-400 font-semibold flex items-center gap-1">
+            <span>GCP • Docker • Postgres</span>
+          </div>
+        </div>
+
+        <!-- Domain 4 -->
+        <div class="hover-card glass-panel p-6 rounded-2xl flex flex-col justify-between border-slate-800">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-gradient-to-tr from-orange-500/20 to-amber-500/10 border border-orange-500/30 flex items-center justify-center text-amber-400 mb-5">
+              <i data-lucide="smartphone" class="w-6 h-6"></i>
+            </div>
+            <h4 class="text-lg font-bold text-white mb-2">Cross-Platform UI</h4>
+            <p class="text-xs text-slate-300 leading-relaxed mb-4 font-light">
+              Real-time multi-touch mobile clients in Flutter/Dart, virtual input studios (keyboards, analog joysticks), and desktop GUI state machines in Java Swing.
+            </p>
+          </div>
+          <div class="text-xs font-mono text-amber-400 font-semibold flex items-center gap-1">
+            <span>Flutter • Dart • Swing</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SKILLS & TECHNOLOGIES (Matching Template: Progress Bars + 12 Square Tech Cards) -->
+    <section id="skills" class="max-w-6xl mx-auto px-6 py-16 border-t border-slate-800/80">
+      <div class="mb-12">
+        <div class="flex items-center gap-2 text-xs font-mono uppercase tracking-widest text-amber-400 font-semibold mb-2">
+          <span class="w-6 h-0.5 bg-amber-500 inline-block"></span>
+          <span>MY EXPERTISE</span>
+        </div>
+        <h3 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">Skills & Technologies</h3>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+        
+        <!-- Left Column: Proficiency Bars with Percentages -->
+        <div class="lg:col-span-5 space-y-6">
+          
+          <div>
+            <div class="flex justify-between text-xs font-bold font-mono text-slate-200 mb-2">
+              <span>Low-Level Systems (C++ / Win32 / Sockets)</span>
+              <span class="text-amber-400">92%</span>
+            </div>
+            <div class="w-full bg-slate-900 rounded-full h-2.5 overflow-hidden border border-slate-800">
+              <div class="bg-gradient-to-r from-orange-500 to-amber-400 h-2.5 rounded-full" style="width: 92%"></div>
+            </div>
+          </div>
+
+          <div>
+            <div class="flex justify-between text-xs font-bold font-mono text-slate-200 mb-2">
+              <span>Backend & Microservices (Java 21, FastAPI, Spring)</span>
+              <span class="text-amber-400">90%</span>
+            </div>
+            <div class="w-full bg-slate-900 rounded-full h-2.5 overflow-hidden border border-slate-800">
+              <div class="bg-gradient-to-r from-orange-500 to-amber-400 h-2.5 rounded-full" style="width: 90%"></div>
+            </div>
+          </div>
+
+          <div>
+            <div class="flex justify-between text-xs font-bold font-mono text-slate-200 mb-2">
+              <span>Databases & SQL (PostgreSQL, Neon)</span>
+              <span class="text-amber-400">88%</span>
+            </div>
+            <div class="w-full bg-slate-900 rounded-full h-2.5 overflow-hidden border border-slate-800">
+              <div class="bg-gradient-to-r from-orange-500 to-amber-400 h-2.5 rounded-full" style="width: 88%"></div>
+            </div>
+          </div>
+
+          <div>
+            <div class="flex justify-between text-xs font-bold font-mono text-slate-200 mb-2">
+              <span>Cloud & DevOps (GCP Cloud Run, Docker Compose)</span>
+              <span class="text-amber-400">85%</span>
+            </div>
+            <div class="w-full bg-slate-900 rounded-full h-2.5 overflow-hidden border border-slate-800">
+              <div class="bg-gradient-to-r from-orange-500 to-amber-400 h-2.5 rounded-full" style="width: 85%"></div>
+            </div>
+          </div>
+
+          <div>
+            <div class="flex justify-between text-xs font-bold font-mono text-slate-200 mb-2">
+              <span>Mobile & UI (Flutter, Dart, React)</span>
+              <span class="text-amber-400">84%</span>
+            </div>
+            <div class="w-full bg-slate-900 rounded-full h-2.5 overflow-hidden border border-slate-800">
+              <div class="bg-gradient-to-r from-orange-500 to-amber-400 h-2.5 rounded-full" style="width: 84%"></div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Right Column: 12 Square Tech Badges with Official Colored Logos (Matching Template Grid) -->
+        <div class="lg:col-span-7">
+          <div class="grid grid-cols-3 sm:grid-cols-4 gap-4">
+            
+            <div class="tech-square glass-panel p-4 rounded-xl flex flex-col items-center justify-center gap-2 border-slate-800">
+              <img src="icons/cplusplus.svg" alt="C++" class="w-8 h-8 object-contain">
+              <span class="text-xs font-mono font-medium text-slate-300">C++</span>
+            </div>
+
+            <div class="tech-square glass-panel p-4 rounded-xl flex flex-col items-center justify-center gap-2 border-slate-800">
+              <img src="icons/java.svg" alt="Java" class="w-8 h-8 object-contain">
+              <span class="text-xs font-mono font-medium text-slate-300">Java 21</span>
+            </div>
+
+            <div class="tech-square glass-panel p-4 rounded-xl flex flex-col items-center justify-center gap-2 border-slate-800">
+              <img src="icons/python.svg" alt="Python" class="w-8 h-8 object-contain">
+              <span class="text-xs font-mono font-medium text-slate-300">Python</span>
+            </div>
+
+            <div class="tech-square glass-panel p-4 rounded-xl flex flex-col items-center justify-center gap-2 border-slate-800">
+              <img src="icons/fastapi.svg" alt="FastAPI" class="w-8 h-8 object-contain">
+              <span class="text-xs font-mono font-medium text-slate-300">FastAPI</span>
+            </div>
+
+            <div class="tech-square glass-panel p-4 rounded-xl flex flex-col items-center justify-center gap-2 border-slate-800">
+              <img src="icons/spring.svg" alt="Spring Boot" class="w-8 h-8 object-contain">
+              <span class="text-xs font-mono font-medium text-slate-300">Spring Boot</span>
+            </div>
+
+            <div class="tech-square glass-panel p-4 rounded-xl flex flex-col items-center justify-center gap-2 border-slate-800">
+              <img src="icons/docker.svg" alt="Docker" class="w-8 h-8 object-contain">
+              <span class="text-xs font-mono font-medium text-slate-300">Docker</span>
+            </div>
+
+            <div class="tech-square glass-panel p-4 rounded-xl flex flex-col items-center justify-center gap-2 border-slate-800">
+              <img src="icons/postgresql.svg" alt="PostgreSQL" class="w-8 h-8 object-contain">
+              <span class="text-xs font-mono font-medium text-slate-300">PostgreSQL</span>
+            </div>
+
+            <div class="tech-square glass-panel p-4 rounded-xl flex flex-col items-center justify-center gap-2 border-slate-800">
+              <img src="icons/googlecloud.svg" alt="GCP" class="w-8 h-8 object-contain">
+              <span class="text-xs font-mono font-medium text-slate-300">GCP</span>
+            </div>
+
+            <div class="tech-square glass-panel p-4 rounded-xl flex flex-col items-center justify-center gap-2 border-slate-800">
+              <img src="icons/flutter.svg" alt="Flutter" class="w-8 h-8 object-contain">
+              <span class="text-xs font-mono font-medium text-slate-300">Flutter</span>
+            </div>
+
+            <div class="tech-square glass-panel p-4 rounded-xl flex flex-col items-center justify-center gap-2 border-slate-800">
+              <img src="icons/react.svg" alt="React" class="w-8 h-8 object-contain">
+              <span class="text-xs font-mono font-medium text-slate-300">React</span>
+            </div>
+
+            <div class="tech-square glass-panel p-4 rounded-xl flex flex-col items-center justify-center gap-2 border-slate-800">
+              <img src="icons/typescript.svg" alt="TypeScript" class="w-8 h-8 object-contain">
+              <span class="text-xs font-mono font-medium text-slate-300">TypeScript</span>
+            </div>
+
+            <div class="tech-square glass-panel p-4 rounded-xl flex flex-col items-center justify-center gap-2 border-slate-800">
+              <img src="icons/git.svg" alt="Git" class="w-8 h-8 object-contain">
+              <span class="text-xs font-mono font-medium text-slate-300">Git</span>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- FEATURED PROJECTS (Matching "Some of My Recent Work" in Template) -->
+    <section id="projects" class="max-w-6xl mx-auto px-6 py-16 border-t border-slate-800/80">
       <div class="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-6">
         <div>
-          <h2 class="text-xs font-bold font-mono uppercase tracking-widest text-blue-400 mb-2">Portfolio Showcase</h2>
-          <h3 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">Featured Engineering Projects</h3>
+          <div class="flex items-center gap-2 text-xs font-mono uppercase tracking-widest text-amber-400 font-semibold mb-2">
+            <span class="w-6 h-0.5 bg-amber-500 inline-block"></span>
+            <span>FEATURED PROJECTS</span>
+          </div>
+          <h3 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">Some of My Recent Work</h3>
         </div>
 
         <!-- Filter Buttons -->
         <div class="flex flex-wrap items-center gap-2 p-1.5 rounded-xl glass-panel text-xs font-medium">
-          <button class="filter-btn px-3 py-1.5 rounded-lg bg-blue-600 text-white shadow-lg shadow-blue-500/25 transition-all" data-filter="all">All</button>
-          <button class="filter-btn px-3 py-1.5 rounded-lg bg-slate-800/80 text-slate-400 hover:text-white transition-all" data-filter="systems">Systems & C++</button>
-          <button class="filter-btn px-3 py-1.5 rounded-lg bg-slate-800/80 text-slate-400 hover:text-white transition-all" data-filter="cloud">Cloud & Full-Stack</button>
-          <button class="filter-btn px-3 py-1.5 rounded-lg bg-slate-800/80 text-slate-400 hover:text-white transition-all" data-filter="mobile">Mobile & Desktop</button>
+          <button class="filter-btn px-3.5 py-1.5 rounded-lg bg-orange-500 text-black font-bold shadow-lg shadow-orange-500/25 transition-all" data-filter="all">All</button>
+          <button class="filter-btn px-3.5 py-1.5 rounded-lg bg-slate-800/80 text-slate-300 hover:text-white transition-all" data-filter="systems">Systems & C++</button>
+          <button class="filter-btn px-3.5 py-1.5 rounded-lg bg-slate-800/80 text-slate-300 hover:text-white transition-all" data-filter="cloud">Cloud & Backend</button>
+          <button class="filter-btn px-3.5 py-1.5 rounded-lg bg-slate-800/80 text-slate-300 hover:text-white transition-all" data-filter="mobile">Mobile & Desktop</button>
         </div>
       </div>
 
@@ -220,265 +529,186 @@
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
 
         <!-- Project 1: PhoneAsPeri -->
-        <div class="project-card glass-panel rounded-2xl p-6 sm:p-8 flex flex-col justify-between border border-slate-800" data-categories="systems mobile">
+        <div class="project-card hover-card glass-panel rounded-2xl p-6 sm:p-8 flex flex-col justify-between border-slate-800" data-categories="systems mobile">
           <div>
             <div class="flex items-center justify-between gap-4 mb-4">
-              <span class="px-2.5 py-1 rounded-md bg-blue-500/10 border border-blue-500/20 text-blue-400 font-mono text-xs font-medium">
+              <span class="px-2.5 py-1 rounded-md bg-orange-500/10 border border-orange-500/20 text-amber-400 font-mono text-xs font-medium">
                 Systems & Mobile
               </span>
-              <a href="https://github.com/AsandeiAlexandru/PhoneAsPeri" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-white transition-colors" title="View Source on GitHub">
-                <i data-lucide="github" class="w-5 h-5"></i>
+              <a href="https://github.com/AsandeiAlexandru/PhoneAsPeri" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-amber-400 transition-colors" title="View Source on GitHub">
+                <i data-lucide="external-link" class="w-5 h-5"></i>
               </a>
             </div>
 
-            <h4 class="text-2xl font-bold text-white mb-2 tracking-tight">PhoneAsPeri</h4>
-            <p class="text-xs text-blue-400 font-mono mb-4">Modular Hardware Remote Control System</p>
+            <h4 class="text-2xl font-bold text-white mb-1.5 tracking-tight">PhoneAsPeri</h4>
+            <p class="text-xs text-amber-400 font-mono mb-4">Modular Hardware Remote Control System</p>
             
             <p class="text-sm text-slate-300 leading-relaxed mb-6 font-light">
-              Engineered a distributed real-time remote control ecosystem connecting a cross-platform Flutter mobile client to a native C++ Windows daemon over local Wi-Fi with <strong class="text-white font-medium">sub-10ms response latency</strong> and a <strong class="text-white font-medium">&lt;5 MB RAM footprint</strong>.
+              Distributed real-time remote control ecosystem connecting a Flutter mobile studio to a native C++ Windows daemon over Wi-Fi with <strong class="text-white font-medium">sub-10ms latency</strong> and a <strong class="text-white font-medium">&lt;5 MB RAM footprint</strong>.
             </p>
 
-            <ul class="text-xs text-slate-400 space-y-2.5 mb-6">
+            <ul class="text-xs text-slate-400 space-y-2 mb-6 font-light">
               <li class="flex items-start gap-2">
-                <i data-lucide="check" class="w-4 h-4 text-blue-400 shrink-0 mt-0.5"></i>
-                <span><strong>Zero-allocation UDP reception hot path:</strong> High throughput socket architecture with token-based boundary discard.</span>
+                <i data-lucide="check" class="w-4 h-4 text-amber-400 shrink-0 mt-0.5"></i>
+                <span>Zero dynamic memory allocations in the UDP reception hot path.</span>
               </li>
               <li class="flex items-start gap-2">
-                <i data-lucide="check" class="w-4 h-4 text-blue-400 shrink-0 mt-0.5"></i>
-                <span><strong>Hardware Event Emulation:</strong> Utilized native Win32 <code class="text-slate-300 font-mono">SendInput</code> API for cursor movement, wheel scroll, and continuous gaming inputs (WASD).</span>
+                <i data-lucide="check" class="w-4 h-4 text-amber-400 shrink-0 mt-0.5"></i>
+                <span>Hardware input emulation via Win32 <code class="text-slate-200 font-mono">SendInput</code> for cursor & multi-key gaming states (WASD).</span>
               </li>
               <li class="flex items-start gap-2">
-                <i data-lucide="check" class="w-4 h-4 text-blue-400 shrink-0 mt-0.5"></i>
-                <span><strong>Flutter Multi-Touch Studio:</strong> 64-key virtual keyboard, 8-directional analog joystick, and a Gyroscope "Air Mouse" with clutch control.</span>
+                <i data-lucide="check" class="w-4 h-4 text-amber-400 shrink-0 mt-0.5"></i>
+                <span>64-key virtual keyboard, 8-way analog joystick, & Gyro Air Mouse with deadzone filtering.</span>
               </li>
             </ul>
           </div>
 
-          <div class="pt-6 border-t border-slate-800/80">
-            <div class="flex flex-wrap gap-2 mb-4">
-              <span class="px-2 py-1 rounded bg-slate-800/90 text-slate-300 text-xs font-mono">C++</span>
-              <span class="px-2 py-1 rounded bg-slate-800/90 text-slate-300 text-xs font-mono">Flutter/Dart</span>
-              <span class="px-2 py-1 rounded bg-slate-800/90 text-slate-300 text-xs font-mono">Win32 API</span>
-              <span class="px-2 py-1 rounded bg-slate-800/90 text-slate-300 text-xs font-mono">Winsock2 UDP</span>
+          <div class="pt-6 border-t border-slate-800/80 flex items-center justify-between">
+            <div class="flex flex-wrap gap-2">
+              <span class="px-2 py-0.5 rounded bg-slate-800/90 text-slate-300 text-xs font-mono">C++</span>
+              <span class="px-2 py-0.5 rounded bg-slate-800/90 text-slate-300 text-xs font-mono">Win32</span>
+              <span class="px-2 py-0.5 rounded bg-slate-800/90 text-slate-300 text-xs font-mono">Flutter</span>
             </div>
-            <a href="https://github.com/AsandeiAlexandru/PhoneAsPeri" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-xs font-semibold text-blue-400 hover:text-blue-300 transition-colors">
-              <span>View PhoneAsPeri on GitHub</span>
-              <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+            <a href="https://github.com/AsandeiAlexandru/PhoneAsPeri" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-bold text-amber-400 hover:text-orange-400 transition-colors">
+              <span>GitHub</span>
+              <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
             </a>
           </div>
         </div>
 
         <!-- Project 2: LDD_FRS -->
-        <div class="project-card glass-panel rounded-2xl p-6 sm:p-8 flex flex-col justify-between border border-slate-800" data-categories="cloud">
+        <div class="project-card hover-card glass-panel rounded-2xl p-6 sm:p-8 flex flex-col justify-between border-slate-800" data-categories="cloud">
           <div>
             <div class="flex items-center justify-between gap-4 mb-4">
-              <span class="px-2.5 py-1 rounded-md bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 font-mono text-xs font-medium">
+              <span class="px-2.5 py-1 rounded-md bg-orange-500/10 border border-orange-500/20 text-amber-400 font-mono text-xs font-medium">
                 Hackathon Platform & Cloud
               </span>
-              <a href="https://github.com/TartaTudorAndrei/LDD_FRS" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-white transition-colors" title="View Source on GitHub">
-                <i data-lucide="github" class="w-5 h-5"></i>
+              <a href="https://github.com/TartaTudorAndrei/LDD_FRS" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-amber-400 transition-colors" title="View Source on GitHub">
+                <i data-lucide="external-link" class="w-5 h-5"></i>
               </a>
             </div>
 
-            <h4 class="text-2xl font-bold text-white mb-2 tracking-tight">LDD_FRS</h4>
-            <p class="text-xs text-indigo-400 font-mono mb-4">Full-Stack AI Football Analytics Platform • "U" Hackathon</p>
+            <h4 class="text-2xl font-bold text-white mb-1.5 tracking-tight">LDD_FRS</h4>
+            <p class="text-xs text-amber-400 font-mono mb-4">AI Football Analytics Platform • "U" Hackathon</p>
             
             <p class="text-sm text-slate-300 leading-relaxed mb-6 font-light">
-              Collaborative sports predictive analytics platform engineered during the <strong class="text-white font-medium">"U" Hackathon</strong> in a 4-person engineering team, orchestrating distributed microservices across Java 21, Python FastAPI, and React.
+              Full-stack sports analytics platform engineered in a 4-person hackathon team, orchestrating microservices across Java 21, Python FastAPI, and React.
             </p>
 
-            <ul class="text-xs text-slate-400 space-y-2.5 mb-6">
+            <ul class="text-xs text-slate-400 space-y-2 mb-6 font-light">
               <li class="flex items-start gap-2">
-                <i data-lucide="check" class="w-4 h-4 text-indigo-400 shrink-0 mt-0.5"></i>
-                <span><strong>Player Performance Index (PPI) Microservice:</strong> Architected mathematical normalization algorithms in Python FastAPI for multi-metric rating.</span>
+                <i data-lucide="check" class="w-4 h-4 text-amber-400 shrink-0 mt-0.5"></i>
+                <span>Architected the Player Performance Index (PPI) microservice in Python FastAPI.</span>
               </li>
               <li class="flex items-start gap-2">
-                <i data-lucide="check" class="w-4 h-4 text-indigo-400 shrink-0 mt-0.5"></i>
-                <span><strong>Serverless Persistence & Cloud:</strong> Integrated Neon Serverless PostgreSQL with Spring Boot backend, containerized with Docker Compose.</span>
+                <i data-lucide="check" class="w-4 h-4 text-amber-400 shrink-0 mt-0.5"></i>
+                <span>Automated persistence with Neon Serverless PostgreSQL and Spring Boot backend.</span>
               </li>
               <li class="flex items-start gap-2">
-                <i data-lucide="check" class="w-4 h-4 text-indigo-400 shrink-0 mt-0.5"></i>
-                <span><strong>Google Cloud Run:</strong> Designed scalable container deployments for distributed microservice orchestration.</span>
+                <i data-lucide="check" class="w-4 h-4 text-amber-400 shrink-0 mt-0.5"></i>
+                <span>Containerized multi-service orchestration with Docker Compose on Google Cloud Run.</span>
               </li>
             </ul>
           </div>
 
-          <div class="pt-6 border-t border-slate-800/80">
-            <div class="flex flex-wrap gap-2 mb-4">
-              <span class="px-2 py-1 rounded bg-slate-800/90 text-slate-300 text-xs font-mono">Java 21</span>
-              <span class="px-2 py-1 rounded bg-slate-800/90 text-slate-300 text-xs font-mono">Spring Boot</span>
-              <span class="px-2 py-1 rounded bg-slate-800/90 text-slate-300 text-xs font-mono">FastAPI</span>
-              <span class="px-2 py-1 rounded bg-slate-800/90 text-slate-300 text-xs font-mono">GCP Cloud Run</span>
-              <span class="px-2 py-1 rounded bg-slate-800/90 text-slate-300 text-xs font-mono">PostgreSQL</span>
+          <div class="pt-6 border-t border-slate-800/80 flex items-center justify-between">
+            <div class="flex flex-wrap gap-2">
+              <span class="px-2 py-0.5 rounded bg-slate-800/90 text-slate-300 text-xs font-mono">Java 21</span>
+              <span class="px-2 py-0.5 rounded bg-slate-800/90 text-slate-300 text-xs font-mono">FastAPI</span>
+              <span class="px-2 py-0.5 rounded bg-slate-800/90 text-slate-300 text-xs font-mono">GCP Run</span>
             </div>
-            <a href="https://github.com/TartaTudorAndrei/LDD_FRS" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-xs font-semibold text-indigo-400 hover:text-indigo-300 transition-colors">
-              <span>View LDD_FRS on GitHub</span>
-              <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+            <a href="https://github.com/TartaTudorAndrei/LDD_FRS" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-bold text-amber-400 hover:text-orange-400 transition-colors">
+              <span>GitHub</span>
+              <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
             </a>
           </div>
         </div>
 
         <!-- Project 3: Rentz Multiplayer -->
-        <div class="project-card glass-panel rounded-2xl p-6 sm:p-8 flex flex-col justify-between border border-slate-800" data-categories="systems mobile">
+        <div class="project-card hover-card glass-panel rounded-2xl p-6 sm:p-8 flex flex-col justify-between border-slate-800" data-categories="systems mobile">
           <div>
             <div class="flex items-center justify-between gap-4 mb-4">
-              <span class="px-2.5 py-1 rounded-md bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 font-mono text-xs font-medium">
+              <span class="px-2.5 py-1 rounded-md bg-orange-500/10 border border-orange-500/20 text-amber-400 font-mono text-xs font-medium">
                 Sockets & Desktop
               </span>
-              <a href="https://github.com/AsandeiAlexandru/LabProject_RENTZ_game" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-white transition-colors" title="View Source on GitHub">
-                <i data-lucide="github" class="w-5 h-5"></i>
+              <a href="https://github.com/AsandeiAlexandru/LabProject_RENTZ_game" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-amber-400 transition-colors" title="View Source on GitHub">
+                <i data-lucide="external-link" class="w-5 h-5"></i>
               </a>
             </div>
 
-            <h4 class="text-2xl font-bold text-white mb-2 tracking-tight">Rentz Multiplayer Card Game</h4>
-            <p class="text-xs text-emerald-400 font-mono mb-4">Client-Server Desktop Application</p>
+            <h4 class="text-2xl font-bold text-white mb-1.5 tracking-tight">Rentz Multiplayer Card Game</h4>
+            <p class="text-xs text-amber-400 font-mono mb-4">Client-Server Desktop Application</p>
             
             <p class="text-sm text-slate-300 leading-relaxed mb-6 font-light">
-              Desktop game engine enforcing comprehensive Rentz tournament rules, turn validation state machines, and a clean graphical user interface using Java Swing.
+              Object-oriented card game engine enforcing Rentz tournament rules, turn validation state machines, and synchronized desktop gameplay via Java Swing.
             </p>
 
-            <ul class="text-xs text-slate-400 space-y-2.5 mb-6">
+            <ul class="text-xs text-slate-400 space-y-2 mb-6 font-light">
               <li class="flex items-start gap-2">
-                <i data-lucide="check" class="w-4 h-4 text-emerald-400 shrink-0 mt-0.5"></i>
-                <span><strong>TCP Socket Protocol:</strong> Custom real-time client-server network architecture for low-overhead game state sync.</span>
+                <i data-lucide="check" class="w-4 h-4 text-amber-400 shrink-0 mt-0.5"></i>
+                <span>Custom client-server TCP socket protocol for low-latency state synchronization.</span>
               </li>
               <li class="flex items-start gap-2">
-                <i data-lucide="check" class="w-4 h-4 text-emerald-400 shrink-0 mt-0.5"></i>
-                <span><strong>Persistent Player Records:</strong> Integrated PostgreSQL database for session persistence, match histories, and rankings.</span>
+                <i data-lucide="check" class="w-4 h-4 text-amber-400 shrink-0 mt-0.5"></i>
+                <span>Persistent session scoring, tournament standings, and records backed by PostgreSQL.</span>
               </li>
             </ul>
           </div>
 
-          <div class="pt-6 border-t border-slate-800/80">
-            <div class="flex flex-wrap gap-2 mb-4">
-              <span class="px-2 py-1 rounded bg-slate-800/90 text-slate-300 text-xs font-mono">Java</span>
-              <span class="px-2 py-1 rounded bg-slate-800/90 text-slate-300 text-xs font-mono">TCP Sockets</span>
-              <span class="px-2 py-1 rounded bg-slate-800/90 text-slate-300 text-xs font-mono">Swing GUI</span>
-              <span class="px-2 py-1 rounded bg-slate-800/90 text-slate-300 text-xs font-mono">PostgreSQL</span>
+          <div class="pt-6 border-t border-slate-800/80 flex items-center justify-between">
+            <div class="flex flex-wrap gap-2">
+              <span class="px-2 py-0.5 rounded bg-slate-800/90 text-slate-300 text-xs font-mono">Java</span>
+              <span class="px-2 py-0.5 rounded bg-slate-800/90 text-slate-300 text-xs font-mono">TCP Sockets</span>
+              <span class="px-2 py-0.5 rounded bg-slate-800/90 text-slate-300 text-xs font-mono">Postgres</span>
             </div>
-            <a href="https://github.com/AsandeiAlexandru/LabProject_RENTZ_game" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-xs font-semibold text-emerald-400 hover:text-emerald-300 transition-colors">
-              <span>View Rentz on GitHub</span>
-              <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+            <a href="https://github.com/AsandeiAlexandru/LabProject_RENTZ_game" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-bold text-amber-400 hover:text-orange-400 transition-colors">
+              <span>GitHub</span>
+              <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
             </a>
           </div>
         </div>
 
         <!-- Project 4: Erudit -->
-        <div class="project-card glass-panel rounded-2xl p-6 sm:p-8 flex flex-col justify-between border border-slate-800" data-categories="mobile">
+        <div class="project-card hover-card glass-panel rounded-2xl p-6 sm:p-8 flex flex-col justify-between border-slate-800" data-categories="mobile">
           <div>
             <div class="flex items-center justify-between gap-4 mb-4">
-              <span class="px-2.5 py-1 rounded-md bg-amber-500/10 border border-amber-500/20 text-amber-400 font-mono text-xs font-medium">
+              <span class="px-2.5 py-1 rounded-md bg-orange-500/10 border border-orange-500/20 text-amber-400 font-mono text-xs font-medium">
                 Mentorship Academy & Mobile
               </span>
-              <a href="https://github.com/aniteicristi/erudit" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-white transition-colors" title="View Source on GitHub">
-                <i data-lucide="github" class="w-5 h-5"></i>
+              <a href="https://github.com/aniteicristi/erudit" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-amber-400 transition-colors" title="View Source on GitHub">
+                <i data-lucide="external-link" class="w-5 h-5"></i>
               </a>
             </div>
 
-            <h4 class="text-2xl font-bold text-white mb-2 tracking-tight">Erudit</h4>
-            <p class="text-xs text-amber-400 font-mono mb-4">Gamified Educational Mobile App • DPIT Mentorship</p>
+            <h4 class="text-2xl font-bold text-white mb-1.5 tracking-tight">Erudit</h4>
+            <p class="text-xs text-amber-400 font-mono mb-4">Gamified Educational Mobile App • DPIT</p>
             
             <p class="text-sm text-slate-300 leading-relaxed mb-6 font-light">
-              Collaborated in a 6-person team during the prestigious 6-month <strong class="text-white font-medium">DPIT (Descoperă-ți pasiunea în IT)</strong> mentorship program to create an interactive STEM learning app.
+              Collaborative Duolingo-style STEM learning mobile app built in a 6-person team during the prestigious 6-month DPIT practical mentorship competition.
             </p>
 
-            <ul class="text-xs text-slate-400 space-y-2.5 mb-6">
+            <ul class="text-xs text-slate-400 space-y-2 mb-6 font-light">
               <li class="flex items-start gap-2">
                 <i data-lucide="check" class="w-4 h-4 text-amber-400 shrink-0 mt-0.5"></i>
-                <span><strong>Interactive Mechanics:</strong> Built dynamic quiz engines, streak progression systems, and gamification feedback loops.</span>
+                <span>Interactive quiz engine, streak progression, and gamification feedback mechanics.</span>
               </li>
               <li class="flex items-start gap-2">
                 <i data-lucide="check" class="w-4 h-4 text-amber-400 shrink-0 mt-0.5"></i>
-                <span><strong>Cross-Platform Architecture:</strong> Fluid mobile UI built in Flutter/Dart with native C++ components.</span>
+                <span>Cross-platform mobile UI engineered with Flutter/Dart and native C++ integrations.</span>
               </li>
             </ul>
           </div>
 
-          <div class="pt-6 border-t border-slate-800/80">
-            <div class="flex flex-wrap gap-2 mb-4">
-              <span class="px-2 py-1 rounded bg-slate-800/90 text-slate-300 text-xs font-mono">Flutter</span>
-              <span class="px-2 py-1 rounded bg-slate-800/90 text-slate-300 text-xs font-mono">Dart</span>
-              <span class="px-2 py-1 rounded bg-slate-800/90 text-slate-300 text-xs font-mono">C++</span>
-              <span class="px-2 py-1 rounded bg-slate-800/90 text-slate-300 text-xs font-mono">DPIT Academy</span>
+          <div class="pt-6 border-t border-slate-800/80 flex items-center justify-between">
+            <div class="flex flex-wrap gap-2">
+              <span class="px-2 py-0.5 rounded bg-slate-800/90 text-slate-300 text-xs font-mono">Flutter</span>
+              <span class="px-2 py-0.5 rounded bg-slate-800/90 text-slate-300 text-xs font-mono">Dart</span>
+              <span class="px-2 py-0.5 rounded bg-slate-800/90 text-slate-300 text-xs font-mono">C++</span>
             </div>
-            <a href="https://github.com/aniteicristi/erudit" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-xs font-semibold text-amber-400 hover:text-amber-300 transition-colors">
-              <span>View Erudit on GitHub</span>
-              <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+            <a href="https://github.com/aniteicristi/erudit" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-bold text-amber-400 hover:text-orange-400 transition-colors">
+              <span>GitHub</span>
+              <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
             </a>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- TECHNICAL SKILLS SECTION -->
-    <section id="skills" class="max-w-6xl mx-auto px-6 py-16">
-      <div class="mb-12">
-        <h2 class="text-xs font-bold font-mono uppercase tracking-widest text-blue-400 mb-2">Technical Proficiency</h2>
-        <h3 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">Core Competencies & Toolchain</h3>
-      </div>
-
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-
-        <!-- Languages -->
-        <div class="glass-panel p-6 rounded-2xl border border-slate-800">
-          <div class="w-10 h-10 rounded-xl bg-blue-500/10 border border-blue-500/20 flex items-center justify-center text-blue-400 mb-4">
-            <i data-lucide="code-2" class="w-5 h-5"></i>
-          </div>
-          <h4 class="text-base font-bold text-white mb-3">Programming Languages</h4>
-          <div class="flex flex-wrap gap-2">
-            <span class="px-2.5 py-1 rounded-md bg-slate-800/80 text-slate-300 text-xs font-mono">C++</span>
-            <span class="px-2.5 py-1 rounded-md bg-slate-800/80 text-slate-300 text-xs font-mono">Java 21</span>
-            <span class="px-2.5 py-1 rounded-md bg-slate-800/80 text-slate-300 text-xs font-mono">Python</span>
-            <span class="px-2.5 py-1 rounded-md bg-slate-800/80 text-slate-300 text-xs font-mono">Dart</span>
-            <span class="px-2.5 py-1 rounded-md bg-slate-800/80 text-slate-300 text-xs font-mono">SQL</span>
-            <span class="px-2.5 py-1 rounded-md bg-slate-800/80 text-slate-300 text-xs font-mono">TypeScript</span>
-            <span class="px-2.5 py-1 rounded-md bg-slate-800/80 text-slate-300 text-xs font-mono">C</span>
-          </div>
-        </div>
-
-        <!-- Frameworks -->
-        <div class="glass-panel p-6 rounded-2xl border border-slate-800">
-          <div class="w-10 h-10 rounded-xl bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center text-indigo-400 mb-4">
-            <i data-lucide="layers" class="w-5 h-5"></i>
-          </div>
-          <h4 class="text-base font-bold text-white mb-3">Frameworks & Backends</h4>
-          <div class="flex flex-wrap gap-2">
-            <span class="px-2.5 py-1 rounded-md bg-slate-800/80 text-slate-300 text-xs font-mono">Spring Boot</span>
-            <span class="px-2.5 py-1 rounded-md bg-slate-800/80 text-slate-300 text-xs font-mono">FastAPI</span>
-            <span class="px-2.5 py-1 rounded-md bg-slate-800/80 text-slate-300 text-xs font-mono">Flutter</span>
-            <span class="px-2.5 py-1 rounded-md bg-slate-800/80 text-slate-300 text-xs font-mono">React</span>
-            <span class="px-2.5 py-1 rounded-md bg-slate-800/80 text-slate-300 text-xs font-mono">Node.js</span>
-          </div>
-        </div>
-
-        <!-- Systems & Infrastructure -->
-        <div class="glass-panel p-6 rounded-2xl border border-slate-800">
-          <div class="w-10 h-10 rounded-xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400 mb-4">
-            <i data-lucide="cpu" class="w-5 h-5"></i>
-          </div>
-          <h4 class="text-base font-bold text-white mb-3">Systems & Networking</h4>
-          <div class="flex flex-wrap gap-2">
-            <span class="px-2.5 py-1 rounded-md bg-slate-800/80 text-slate-300 text-xs font-mono">Win32 API</span>
-            <span class="px-2.5 py-1 rounded-md bg-slate-800/80 text-slate-300 text-xs font-mono">Winsock2 UDP/TCP</span>
-            <span class="px-2.5 py-1 rounded-md bg-slate-800/80 text-slate-300 text-xs font-mono">Multithreading</span>
-            <span class="px-2.5 py-1 rounded-md bg-slate-800/80 text-slate-300 text-xs font-mono">Socket Programming</span>
-            <span class="px-2.5 py-1 rounded-md bg-slate-800/80 text-slate-300 text-xs font-mono">Low-Latency IO</span>
-          </div>
-        </div>
-
-        <!-- Cloud & DevOps -->
-        <div class="glass-panel p-6 rounded-2xl border border-slate-800">
-          <div class="w-10 h-10 rounded-xl bg-sky-500/10 border border-sky-500/20 flex items-center justify-center text-sky-400 mb-4">
-            <i data-lucide="cloud" class="w-5 h-5"></i>
-          </div>
-          <h4 class="text-base font-bold text-white mb-3">Cloud & DevOps</h4>
-          <div class="flex flex-wrap gap-2">
-            <span class="px-2.5 py-1 rounded-md bg-slate-800/80 text-slate-300 text-xs font-mono">Docker & Compose</span>
-            <span class="px-2.5 py-1 rounded-md bg-slate-800/80 text-slate-300 text-xs font-mono">GCP Cloud Run</span>
-            <span class="px-2.5 py-1 rounded-md bg-slate-800/80 text-slate-300 text-xs font-mono">PostgreSQL</span>
-            <span class="px-2.5 py-1 rounded-md bg-slate-800/80 text-slate-300 text-xs font-mono">GitHub Actions</span>
-            <span class="px-2.5 py-1 rounded-md bg-slate-800/80 text-slate-300 text-xs font-mono">Linux / Bash</span>
           </div>
         </div>
 
@@ -486,20 +716,23 @@
     </section>
 
     <!-- EDUCATION & HACKATHONS SECTION -->
-    <section id="education" class="max-w-6xl mx-auto px-6 py-16">
+    <section id="education" class="max-w-6xl mx-auto px-6 py-16 border-t border-slate-800/80">
       <div class="mb-12">
-        <h2 class="text-xs font-bold font-mono uppercase tracking-widest text-blue-400 mb-2">Background</h2>
+        <div class="flex items-center gap-2 text-xs font-mono uppercase tracking-widest text-amber-400 font-semibold mb-2">
+          <span class="w-6 h-0.5 bg-amber-500 inline-block"></span>
+          <span>BACKGROUND</span>
+        </div>
         <h3 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">Education & Extracurriculars</h3>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
 
         <!-- University Card -->
-        <div class="md:col-span-2 glass-panel p-6 sm:p-8 rounded-2xl border border-slate-800 flex flex-col justify-between">
+        <div class="md:col-span-2 hover-card glass-panel p-6 sm:p-8 rounded-2xl border-slate-800 flex flex-col justify-between">
           <div>
             <div class="flex items-center justify-between gap-4 mb-3">
-              <span class="text-xs font-mono text-blue-400 font-semibold uppercase tracking-wider">B.S. in Computer Science</span>
-              <span class="text-xs font-mono px-2 py-0.5 rounded bg-blue-900/40 text-blue-300">Expected: 2028 (Year 3 of 4)</span>
+              <span class="text-xs font-mono text-amber-400 font-semibold uppercase tracking-wider">B.S. in Computer Science</span>
+              <span class="text-xs font-mono px-2.5 py-0.5 rounded-full bg-orange-500/10 border border-orange-500/20 text-amber-300">Expected: 2028 (Year 3 of 4)</span>
             </div>
             <h4 class="text-xl font-bold text-white mb-1">Technical University of Cluj-Napoca (UTCN)</h4>
             <p class="text-xs text-slate-400 mb-4">Faculty of Automation and Computer Science • English Curriculum</p>
@@ -508,23 +741,23 @@
               Data Structures & Algorithms, Object-Oriented Programming (Java/C++), Operating Systems, Computer Architecture, Computer Networks, Database Systems, Software Engineering.
             </p>
           </div>
-          <div class="mt-6 pt-4 border-t border-slate-800/80 flex items-center gap-2 text-xs text-slate-400">
-            <i data-lucide="graduation-cap" class="w-4 h-4 text-blue-400"></i>
+          <div class="mt-6 pt-4 border-t border-slate-800 flex items-center gap-2 text-xs text-slate-400">
+            <i data-lucide="graduation-cap" class="w-4 h-4 text-amber-400"></i>
             <span>Cluj-Napoca, Romania</span>
           </div>
         </div>
 
-        <!-- Hackathons & DPIT Column -->
+        <!-- Hackathons & Mentorship Column -->
         <div class="space-y-6">
-          <div class="glass-panel p-6 rounded-2xl border border-slate-800">
-            <div class="text-xs font-mono text-indigo-400 uppercase tracking-wider font-semibold mb-1">Hackathon</div>
+          <div class="hover-card glass-panel p-6 rounded-2xl border-slate-800">
+            <div class="text-xs font-mono text-amber-400 uppercase tracking-wider font-semibold mb-1">Hackathon</div>
             <h5 class="text-base font-bold text-white mb-2">"U" Hackathon Cluj-Napoca</h5>
             <p class="text-xs text-slate-300 font-light leading-relaxed">
               Team developer on the LDD_FRS AI Football Analytics platform, deploying microservices on GCP Cloud Run.
             </p>
           </div>
 
-          <div class="glass-panel p-6 rounded-2xl border border-slate-800">
+          <div class="hover-card glass-panel p-6 rounded-2xl border-slate-800">
             <div class="text-xs font-mono text-amber-400 uppercase tracking-wider font-semibold mb-1">Mentorship Academy</div>
             <h5 class="text-base font-bold text-white mb-2">Descoperă-ți pasiunea în IT (DPIT)</h5>
             <p class="text-xs text-slate-300 font-light leading-relaxed">
@@ -536,47 +769,76 @@
       </div>
     </section>
 
+    <!-- GET IN TOUCH (Matching Template's Bottom Contact Section) -->
+    <section id="contact" class="max-w-6xl mx-auto px-6 py-20 border-t border-slate-800/80">
+      <div class="glass-panel-orange rounded-3xl p-8 sm:p-14 relative overflow-hidden text-center max-w-3xl mx-auto">
+        <div class="ambient-orb w-[300px] h-[300px] bg-orange-600/20 top-[0px] left-[20%]"></div>
+        
+        <div class="relative z-10">
+          <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-orange-500 to-amber-500 mx-auto flex items-center justify-center text-black mb-6 shadow-xl shadow-orange-500/25">
+            <i data-lucide="send" class="w-7 h-7"></i>
+          </div>
+
+          <h3 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight mb-4">
+            Let's Build Something Great Together
+          </h3>
+
+          <p class="text-sm sm:text-base text-slate-300 font-light mb-8 max-w-xl mx-auto leading-relaxed">
+            I am actively looking for software engineering internships and junior engineering roles. Feel free to reach out directly or download my resume.
+          </p>
+
+          <div class="flex flex-wrap items-center justify-center gap-4 mb-8">
+            <a href="mailto:asandeialexandru@gmail.com" class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-gradient-to-r from-orange-500 to-amber-500 hover:from-orange-600 hover:to-amber-600 text-black font-extrabold text-xs uppercase tracking-wider shadow-xl shadow-orange-500/25 transition-all hover:-translate-y-0.5">
+              <i data-lucide="mail" class="w-4 h-4"></i>
+              <span>asandeialexandru@gmail.com</span>
+            </a>
+            <button class="copy-email-btn inline-flex items-center gap-2 px-5 py-3 rounded-full glass-panel text-slate-200 hover:text-white font-semibold text-xs uppercase tracking-wider transition-all hover:bg-slate-800">
+              <i data-lucide="copy" class="w-4 h-4 text-amber-400"></i>
+              <span>Copy Email</span>
+            </button>
+            <a href="Alexandru_Asandei_CV.pdf" download="Alexandru_Asandei_CV.pdf" class="inline-flex items-center gap-2 px-6 py-3 rounded-full glass-panel text-amber-300 hover:text-white font-semibold text-xs uppercase tracking-wider transition-all hover:bg-slate-800">
+              <i data-lucide="file-down" class="w-4 h-4"></i>
+              <span>Download Resume</span>
+            </a>
+          </div>
+
+          <div class="flex items-center justify-center gap-6 text-sm text-slate-400 pt-6 border-t border-slate-800">
+            <a href="https://github.com/AsandeiAlexandru" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors flex items-center gap-1.5">
+              <img src="github_logo.png" alt="GitHub" class="w-4 h-4 rounded-full object-contain">
+              <span>GitHub</span>
+            </a>
+            <span>•</span>
+            <a href="https://www.linkedin.com/in/alex-asandei-6b8263370/" target="_blank" rel="noopener noreferrer" class="hover:text-amber-400 transition-colors flex items-center gap-1.5">
+              <img src="linkedin_logo.png" alt="LinkedIn" class="w-4 h-4 rounded object-contain">
+              <span>LinkedIn</span>
+            </a>
+            <span>•</span>
+            <span class="flex items-center gap-1.5 text-slate-300 font-mono">
+              <i data-lucide="phone" class="w-3.5 h-3.5 text-amber-400"></i>
+              <span>+40 773 857 138</span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
   </main>
 
-  <!-- FOOTER & CONTACT -->
-  <footer id="contact" class="relative z-10 border-t border-slate-800/80 py-10 text-center text-xs text-slate-500">
-    <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
+  <!-- FOOTER (Matching Template) -->
+  <footer class="relative z-10 border-t border-slate-800/80 py-8 text-center text-xs text-slate-500">
+    <div class="max-w-6xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
       <div class="flex items-center gap-2">
-        <span class="w-6 h-6 rounded-md bg-blue-600/30 text-blue-400 font-mono font-bold flex items-center justify-center text-xs">AA</span>
-        <span>© <span id="current-year">2026</span> Alexandru Asandei</span>
+        <span class="w-5 h-5 rounded bg-orange-500/20 text-amber-400 font-mono font-bold flex items-center justify-center text-[10px]">AA</span>
+        <span>© <span id="current-year">2026</span> Alexandru Asandei. All rights reserved.</span>
       </div>
-
-      <!-- Contact & Social Links (logo before name, clean & non-redundant) -->
-      <div class="flex flex-wrap items-center justify-center gap-6 text-slate-300">
-        <a href="mailto:asandeialexandru@gmail.com" class="hover:text-white transition-colors flex items-center gap-1.5">
-          <i data-lucide="mail" class="w-4 h-4 text-emerald-400"></i>
-          <span>asandeialexandru@gmail.com</span>
-        </a>
-        <a href="https://github.com/AsandeiAlexandru" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors flex items-center gap-1.5">
-          <img src="github_logo.png" alt="GitHub" class="w-4 h-4 rounded-full object-contain">
-          <span>GitHub</span>
-        </a>
-        <a href="https://www.linkedin.com/in/alex-asandei-6b8263370/" target="_blank" rel="noopener noreferrer" class="hover:text-blue-400 transition-colors flex items-center gap-1.5">
-          <img src="linkedin_logo.png" alt="LinkedIn" class="w-4 h-4 rounded object-contain">
-          <span>LinkedIn</span>
-        </a>
-        <span class="flex items-center gap-1.5 text-slate-400 font-mono">
-          <i data-lucide="phone" class="w-3.5 h-3.5 text-emerald-400"></i>
-          <span>+40 773 857 138</span>
-        </span>
-      </div>
-
-      <div>
-        <a href="#about" class="text-slate-400 hover:text-white transition-colors flex items-center gap-1">
-          <span>Back to top</span>
-          <i data-lucide="arrow-up" class="w-3 h-3"></i>
-        </a>
+      <div class="flex items-center gap-4 text-slate-400">
+        <a href="#home" class="hover:text-amber-400 transition-colors">Back to top ↑</a>
       </div>
     </div>
   </footer>
 
   <!-- Toast Notification -->
-  <div id="toast" class="hidden fixed bottom-6 right-6 z-50 px-5 py-3 rounded-xl bg-slate-900/95 border border-emerald-500/40 text-emerald-300 text-xs font-medium shadow-2xl flex items-center gap-2 backdrop-blur-md">
+  <div id="toast" class="hidden fixed bottom-6 right-6 z-50 px-5 py-3 rounded-xl bg-slate-900/95 border border-amber-500/40 text-amber-300 text-xs font-medium shadow-2xl flex items-center gap-2 backdrop-blur-md">
     Email address copied to clipboard!
   </div>
 
@@ -584,6 +846,6 @@
   <script>
     lucide.createIcons();
   </script>
-  <script src="js/main.js"></script>
+  <script src="js/main.js?v=3.0"></script>
 </body>
 </html>

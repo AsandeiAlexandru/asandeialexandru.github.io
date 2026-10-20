@@ -19,12 +19,12 @@ function initProjectFilters() {
 
       // Update button styles
       filterButtons.forEach(btn => {
-        btn.classList.remove('bg-blue-600', 'text-white', 'shadow-lg', 'shadow-blue-500/25');
-        btn.classList.add('bg-slate-800/80', 'text-slate-400', 'hover:text-white', 'hover:bg-slate-700/80');
+        btn.classList.remove('bg-orange-500', 'text-black', 'font-bold', 'shadow-lg', 'shadow-orange-500/25');
+        btn.classList.add('bg-slate-800/80', 'text-slate-300', 'hover:text-white');
       });
 
-      button.classList.remove('bg-slate-800/80', 'text-slate-400', 'hover:text-white', 'hover:bg-slate-700/80');
-      button.classList.add('bg-blue-600', 'text-white', 'shadow-lg', 'shadow-blue-500/25');
+      button.classList.remove('bg-slate-800/80', 'text-slate-300', 'hover:text-white');
+      button.classList.add('bg-orange-500', 'text-black', 'font-bold', 'shadow-lg', 'shadow-orange-500/25');
 
       // Filter project cards
       projectCards.forEach(card => {
@@ -89,11 +89,11 @@ function initScrollSpy() {
     });
 
     navLinks.forEach(link => {
-      link.classList.remove('text-blue-400', 'border-b-2', 'border-blue-500');
+      link.classList.remove('text-amber-400', 'border-b-2', 'border-amber-500');
       link.classList.add('text-slate-300');
       if (link.getAttribute('href') === `#${current}`) {
         link.classList.remove('text-slate-300');
-        link.classList.add('text-blue-400', 'border-b-2', 'border-blue-500');
+        link.classList.add('text-amber-400', 'border-b-2', 'border-amber-500');
       }
     });
   });
