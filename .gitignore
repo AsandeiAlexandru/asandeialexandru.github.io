@@ -1,9 +1,9 @@
-# Exclude raw photos, portraits and legacy PNG logos from Git
-alexandru_portrait.png
+# Exclude raw photos and legacy PNG logos from Git
 github_logo.png
 linkedin_logo.png
 remove_*.png
 replace_*.png
+aspect.png
 me background.jpeg
 me_white_background.jpeg
 me_nobackground.png
