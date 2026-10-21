@@ -43,8 +43,16 @@ This document tracks completed refinements, upcoming enhancements, content addit
 - [x] **Minimalist Monochrome Theme (Orange Pruned)**:
   - Transitioned website aesthetic from warm amber/orange to an obsidian and crisp white minimalist palette.
   - Converted all orange accent text, badges, and link highlights across Hero, Skills, Projects, Education, and Footer to pure white and subtle slate.
-- [x] **Core Competencies & Toolchain Breakdown**:
-  - Added official technology SVG icons in front of every skill item (Languages, Frameworks, Systems & Networking, Cloud & Tools).
+- [x] **Interactive Stacked Project Card Deck**:
+  - Replaced static grid and category filter bar with a tactile, stacked deck of cards carousel.
+  - Cards peek from behind with 3D depth, opacity, and scale layers.
+  - Cycle cards smoothly on tap, swipe, arrow navigation, or indicator dot clicks.
+  - Safe link handling ensures opening GitHub or external links without unintentionally cycling cards.
+- [x] **Toolchain & Skills Pruning**:
+  - Removed redundant `C` from Languages (keeping `C++`, `Java 21`, `Python`, `Dart`, `SQL`, `TypeScript`).
+  - Removed `Systems & Networking` section entirely for a tighter, high-impact skill presentation.
+  - Reorganized `Cloud & DevOps` into: `GitHub Actions`, `Linux / Bash`, `Postgres (Neon)`, `Docker & Compose`, `GCP Cloud Run`.
+  - Balanced toolchain layout into a clean 3-column responsive grid (Languages, Frameworks & APIs, Cloud & DevOps).
 - [x] **Education Section Refinement**:
   - Removed "B.S." in front of "Computer Science".
   - Removed "Core Coursework" listing from both the website and resume.

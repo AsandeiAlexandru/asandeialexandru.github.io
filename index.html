@@ -28,7 +28,7 @@
   <script src="https://unpkg.com/lucide@latest"></script>
 
   <!-- Custom Stylesheet with Cache Buster -->
-  <link rel="stylesheet" href="css/style.css?v=10.0">
+  <link rel="stylesheet" href="css/style.css?v=11.0">
 </head>
 <body class="bg-[#07080a] text-slate-200 antialiased selection:bg-white selection:text-black relative overflow-x-hidden">
 
@@ -245,7 +245,7 @@
           <span>Core Competencies & Toolchain Breakdown</span>
         </h4>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
           
           <!-- Card 1: Languages -->
           <div class="glass-panel p-5 rounded-2xl border-slate-800">
@@ -277,10 +277,6 @@
                 <img src="icons/typescript.svg" alt="" class="w-3.5 h-3.5 object-contain">
                 <span>TypeScript</span>
               </span>
-              <span class="skill-pill inline-flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg text-xs font-mono text-slate-200">
-                <img src="icons/cplusplus.svg" alt="" class="w-3.5 h-3.5 object-contain">
-                <span>C</span>
-              </span>
             </div>
           </div>
 
@@ -309,49 +305,12 @@
             </div>
           </div>
 
-          <!-- Card 3: Systems & Networking -->
-          <div class="glass-panel p-5 rounded-2xl border-slate-800">
-            <h5 class="text-xs font-bold text-white font-mono uppercase tracking-wider mb-4 pb-2 border-b border-slate-800">
-              Systems & Networking
-            </h5>
-            <div class="flex flex-wrap gap-2">
-              <span class="skill-pill inline-flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg text-xs font-mono text-slate-200">
-                <i data-lucide="cpu" class="w-3.5 h-3.5 text-slate-300"></i>
-                <span>Win32 API</span>
-              </span>
-              <span class="skill-pill inline-flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg text-xs font-mono text-slate-200">
-                <i data-lucide="network" class="w-3.5 h-3.5 text-slate-300"></i>
-                <span>Winsock2 UDP/TCP</span>
-              </span>
-              <span class="skill-pill inline-flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg text-xs font-mono text-slate-200">
-                <i data-lucide="layers" class="w-3.5 h-3.5 text-slate-300"></i>
-                <span>Multithreading</span>
-              </span>
-              <span class="skill-pill inline-flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg text-xs font-mono text-slate-200">
-                <i data-lucide="zap" class="w-3.5 h-3.5 text-slate-300"></i>
-                <span>Zero-Alloc Hot Path</span>
-              </span>
-            </div>
-          </div>
-
-          <!-- Card 4: Cloud & Tools -->
+          <!-- Card 3: Cloud & DevOps -->
           <div class="glass-panel p-5 rounded-2xl border-slate-800">
             <h5 class="text-xs font-bold text-white font-mono uppercase tracking-wider mb-4 pb-2 border-b border-slate-800">
               Cloud & DevOps
             </h5>
             <div class="flex flex-wrap gap-2">
-              <span class="skill-pill inline-flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg text-xs font-mono text-slate-200">
-                <img src="icons/docker.svg" alt="" class="w-3.5 h-3.5 object-contain">
-                <span>Docker & Compose</span>
-              </span>
-              <span class="skill-pill inline-flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg text-xs font-mono text-slate-200">
-                <img src="icons/googlecloud.svg" alt="" class="w-3.5 h-3.5 object-contain">
-                <span>GCP Cloud Run</span>
-              </span>
-              <span class="skill-pill inline-flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg text-xs font-mono text-slate-200">
-                <img src="icons/postgresql.svg" alt="" class="w-3.5 h-3.5 object-contain">
-                <span>Postgres (Neon)</span>
-              </span>
               <span class="skill-pill inline-flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg text-xs font-mono text-slate-200">
                 <img src="icons/git.svg" alt="" class="w-3.5 h-3.5 object-contain">
                 <span>GitHub Actions</span>
@@ -359,6 +318,18 @@
               <span class="skill-pill inline-flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg text-xs font-mono text-slate-200">
                 <i data-lucide="terminal" class="w-3.5 h-3.5 text-slate-300"></i>
                 <span>Linux / Bash</span>
+              </span>
+              <span class="skill-pill inline-flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg text-xs font-mono text-slate-200">
+                <img src="icons/postgresql.svg" alt="" class="w-3.5 h-3.5 object-contain">
+                <span>Postgres (Neon)</span>
+              </span>
+              <span class="skill-pill inline-flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg text-xs font-mono text-slate-200">
+                <img src="icons/docker.svg" alt="" class="w-3.5 h-3.5 object-contain">
+                <span>Docker & Compose</span>
+              </span>
+              <span class="skill-pill inline-flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg text-xs font-mono text-slate-200">
+                <img src="icons/googlecloud.svg" alt="" class="w-3.5 h-3.5 object-contain">
+                <span>GCP Cloud Run</span>
               </span>
             </div>
           </div>
@@ -369,7 +340,7 @@
 
     <!-- FEATURED PROJECTS -->
     <section id="projects" class="max-w-5xl mx-auto px-6 lg:px-12 py-16 border-t border-slate-800">
-      <div class="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-6">
+      <div class="flex flex-col sm:flex-row sm:items-end justify-between mb-8 gap-4">
         <div>
           <div class="flex items-center gap-2 text-xs font-mono uppercase tracking-widest text-white font-semibold mb-2">
             <span class="w-6 h-0.5 bg-white inline-block"></span>
@@ -378,223 +349,242 @@
           <h3 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">Some of My Recent Work</h3>
         </div>
 
-        <!-- Filter Buttons -->
-        <div class="flex flex-wrap items-center gap-2 p-1.5 rounded-xl glass-panel text-xs font-medium">
-          <button class="filter-btn px-3.5 py-1.5 rounded-lg bg-white text-black font-bold shadow-lg shadow-white/20 transition-all" data-filter="all">All</button>
-          <button class="filter-btn px-3.5 py-1.5 rounded-lg bg-slate-800/80 text-slate-300 hover:text-white transition-all" data-filter="systems">Systems & C++</button>
-          <button class="filter-btn px-3.5 py-1.5 rounded-lg bg-slate-800/80 text-slate-300 hover:text-white transition-all" data-filter="cloud">Cloud & Backend</button>
-          <button class="filter-btn px-3.5 py-1.5 rounded-lg bg-slate-800/80 text-slate-300 hover:text-white transition-all" data-filter="mobile">Mobile & Desktop</button>
+        <!-- Deck Controls & Hint -->
+        <div class="flex items-center gap-3">
+          <span class="text-xs font-mono text-slate-400 hidden sm:inline-flex items-center gap-1.5">
+            <i data-lucide="layers" class="w-3.5 h-3.5 text-slate-400"></i>
+            <span>Click or swipe card</span>
+          </span>
+          <div class="flex items-center gap-1.5 p-1 rounded-xl glass-panel text-xs">
+            <button id="deck-prev" class="p-2 rounded-lg text-slate-400 hover:text-white hover:bg-slate-800/80 transition-colors" title="Previous Project" aria-label="Previous Project">
+              <i data-lucide="chevron-left" class="w-4 h-4"></i>
+            </button>
+            <span id="deck-counter" class="font-mono text-xs text-slate-300 px-2 min-w-[50px] text-center font-semibold">1 / 4</span>
+            <button id="deck-next" class="p-2 rounded-lg text-slate-400 hover:text-white hover:bg-slate-800/80 transition-colors" title="Next Project" aria-label="Next Project">
+              <i data-lucide="chevron-right" class="w-4 h-4"></i>
+            </button>
+          </div>
         </div>
       </div>
 
-      <!-- Project Cards Grid -->
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <!-- Stacked Card Deck -->
+      <div class="pt-8 pb-4">
+        <div id="project-deck" class="deck-container">
 
-        <!-- Project 1: PhoneAsPeri -->
-        <div class="project-card hover-card glass-panel rounded-2xl p-6 sm:p-8 flex flex-col justify-between border-slate-800" data-categories="systems mobile">
-          <div>
-            <div class="flex items-center justify-between gap-4 mb-4">
-              <span class="px-2.5 py-1 rounded-md bg-white/10 border border-white/20 text-white font-mono text-xs font-medium">
-                Systems & Mobile
-              </span>
-              <a href="https://github.com/AsandeiAlexandru/PhoneAsPeri" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-white transition-colors" title="View Source on GitHub">
-                <i data-lucide="external-link" class="w-5 h-5"></i>
+          <!-- Card 1: PhoneAsPeri -->
+          <div class="deck-card glass-panel rounded-2xl p-6 sm:p-8 flex flex-col justify-between" data-depth="0">
+            <div>
+              <div class="flex items-center justify-between gap-4 mb-4">
+                <span class="px-2.5 py-1 rounded-md bg-white/10 border border-white/20 text-white font-mono text-xs font-medium">
+                  Systems & Mobile
+                </span>
+                <a href="https://github.com/AsandeiAlexandru/PhoneAsPeri" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-white transition-colors" title="View Source on GitHub">
+                  <i data-lucide="external-link" class="w-5 h-5"></i>
+                </a>
+              </div>
+
+              <h4 class="text-2xl font-bold text-white mb-1.5 tracking-tight">PhoneAsPeri</h4>
+              <p class="text-xs text-white font-mono mb-4">Modular Hardware Remote Control System</p>
+              
+              <p class="text-sm text-slate-300 leading-relaxed mb-6 font-light">
+                Distributed real-time remote control ecosystem connecting a Flutter mobile studio to a native C++ Windows daemon over Wi-Fi with <strong class="text-white font-medium">sub-10ms latency</strong> and a <strong class="text-white font-medium">&lt;5 MB RAM footprint</strong>.
+              </p>
+
+              <ul class="text-xs text-slate-400 space-y-2 mb-6 font-light">
+                <li class="flex items-start gap-2">
+                  <i data-lucide="check" class="w-4 h-4 text-white shrink-0 mt-0.5"></i>
+                  <span>Zero dynamic memory allocations in the UDP reception hot path.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <i data-lucide="check" class="w-4 h-4 text-white shrink-0 mt-0.5"></i>
+                  <span>Hardware input emulation via Win32 <code class="text-slate-200 font-mono">SendInput</code> for cursor & multi-key gaming states (WASD).</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <i data-lucide="check" class="w-4 h-4 text-white shrink-0 mt-0.5"></i>
+                  <span>64-key virtual keyboard, 8-way analog joystick, & Gyro Air Mouse with deadzone filtering.</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="pt-6 border-t border-slate-800 flex items-center justify-between">
+              <div class="flex flex-wrap gap-2">
+                <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-slate-800/90 text-slate-300 text-xs font-mono">
+                  <img src="icons/cplusplus.svg" alt="" class="w-3 h-3"> C++
+                </span>
+                <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-slate-800/90 text-slate-300 text-xs font-mono">
+                  <i data-lucide="cpu" class="w-3 h-3 text-slate-400"></i> Win32
+                </span>
+                <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-slate-800/90 text-slate-300 text-xs font-mono">
+                  <img src="icons/flutter.svg" alt="" class="w-3 h-3"> Flutter
+                </span>
+              </div>
+              <a href="https://github.com/AsandeiAlexandru/PhoneAsPeri" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-bold text-white hover:text-slate-300 transition-colors">
+                <span>GitHub</span>
+                <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
               </a>
             </div>
-
-            <h4 class="text-2xl font-bold text-white mb-1.5 tracking-tight">PhoneAsPeri</h4>
-            <p class="text-xs text-white font-mono mb-4">Modular Hardware Remote Control System</p>
-            
-            <p class="text-sm text-slate-300 leading-relaxed mb-6 font-light">
-              Distributed real-time remote control ecosystem connecting a Flutter mobile studio to a native C++ Windows daemon over Wi-Fi with <strong class="text-white font-medium">sub-10ms latency</strong> and a <strong class="text-white font-medium">&lt;5 MB RAM footprint</strong>.
-            </p>
-
-            <ul class="text-xs text-slate-400 space-y-2 mb-6 font-light">
-              <li class="flex items-start gap-2">
-                <i data-lucide="check" class="w-4 h-4 text-white shrink-0 mt-0.5"></i>
-                <span>Zero dynamic memory allocations in the UDP reception hot path.</span>
-              </li>
-              <li class="flex items-start gap-2">
-                <i data-lucide="check" class="w-4 h-4 text-white shrink-0 mt-0.5"></i>
-                <span>Hardware input emulation via Win32 <code class="text-slate-200 font-mono">SendInput</code> for cursor & multi-key gaming states (WASD).</span>
-              </li>
-              <li class="flex items-start gap-2">
-                <i data-lucide="check" class="w-4 h-4 text-white shrink-0 mt-0.5"></i>
-                <span>64-key virtual keyboard, 8-way analog joystick, & Gyro Air Mouse with deadzone filtering.</span>
-              </li>
-            </ul>
           </div>
 
-          <div class="pt-6 border-t border-slate-800 flex items-center justify-between">
-            <div class="flex flex-wrap gap-2">
-              <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-slate-800/90 text-slate-300 text-xs font-mono">
-                <img src="icons/cplusplus.svg" alt="" class="w-3 h-3"> C++
-              </span>
-              <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-slate-800/90 text-slate-300 text-xs font-mono">
-                <i data-lucide="cpu" class="w-3 h-3 text-slate-400"></i> Win32
-              </span>
-              <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-slate-800/90 text-slate-300 text-xs font-mono">
-                <img src="icons/flutter.svg" alt="" class="w-3 h-3"> Flutter
-              </span>
+          <!-- Card 2: LDD_FRS -->
+          <div class="deck-card glass-panel rounded-2xl p-6 sm:p-8 flex flex-col justify-between" data-depth="1">
+            <div>
+              <div class="flex items-center justify-between gap-4 mb-4">
+                <span class="px-2.5 py-1 rounded-md bg-white/10 border border-white/20 text-white font-mono text-xs font-medium">
+                  Hackathon Platform & Cloud
+                </span>
+                <a href="https://github.com/TartaTudorAndrei/LDD_FRS" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-white transition-colors" title="View Source on GitHub">
+                  <i data-lucide="external-link" class="w-5 h-5"></i>
+                </a>
+              </div>
+
+              <h4 class="text-2xl font-bold text-white mb-1.5 tracking-tight">LDD_FRS</h4>
+              <p class="text-xs text-white font-mono mb-4">AI Football Analytics Platform • "U" Hackathon</p>
+              
+              <p class="text-sm text-slate-300 leading-relaxed mb-6 font-light">
+                Full-stack sports analytics platform engineered in a 4-person hackathon team, orchestrating microservices across Java 21, Python FastAPI, and React.
+              </p>
+
+              <ul class="text-xs text-slate-400 space-y-2 mb-6 font-light">
+                <li class="flex items-start gap-2">
+                  <i data-lucide="check" class="w-4 h-4 text-white shrink-0 mt-0.5"></i>
+                  <span>Architected the Player Performance Index (PPI) microservice in Python FastAPI.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <i data-lucide="check" class="w-4 h-4 text-white shrink-0 mt-0.5"></i>
+                  <span>Automated persistence with Neon Serverless PostgreSQL and Spring Boot backend.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <i data-lucide="check" class="w-4 h-4 text-white shrink-0 mt-0.5"></i>
+                  <span>Containerized multi-service orchestration with Docker Compose on Google Cloud Run.</span>
+                </li>
+              </ul>
             </div>
-            <a href="https://github.com/AsandeiAlexandru/PhoneAsPeri" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-bold text-white hover:text-slate-300 transition-colors">
-              <span>GitHub</span>
-              <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
-            </a>
-          </div>
-        </div>
 
-        <!-- Project 2: LDD_FRS -->
-        <div class="project-card hover-card glass-panel rounded-2xl p-6 sm:p-8 flex flex-col justify-between border-slate-800" data-categories="cloud">
-          <div>
-            <div class="flex items-center justify-between gap-4 mb-4">
-              <span class="px-2.5 py-1 rounded-md bg-white/10 border border-white/20 text-white font-mono text-xs font-medium">
-                Hackathon Platform & Cloud
-              </span>
-              <a href="https://github.com/TartaTudorAndrei/LDD_FRS" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-white transition-colors" title="View Source on GitHub">
-                <i data-lucide="external-link" class="w-5 h-5"></i>
+            <div class="pt-6 border-t border-slate-800 flex items-center justify-between">
+              <div class="flex flex-wrap gap-2">
+                <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-slate-800/90 text-slate-300 text-xs font-mono">
+                  <img src="icons/java.svg" alt="" class="w-3 h-3"> Java 21
+                </span>
+                <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-slate-800/90 text-slate-300 text-xs font-mono">
+                  <img src="icons/fastapi.svg" alt="" class="w-3 h-3"> FastAPI
+                </span>
+                <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-slate-800/90 text-slate-300 text-xs font-mono">
+                  <img src="icons/googlecloud.svg" alt="" class="w-3 h-3"> GCP
+                </span>
+              </div>
+              <a href="https://github.com/TartaTudorAndrei/LDD_FRS" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-bold text-white hover:text-slate-300 transition-colors">
+                <span>GitHub</span>
+                <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
               </a>
             </div>
-
-            <h4 class="text-2xl font-bold text-white mb-1.5 tracking-tight">LDD_FRS</h4>
-            <p class="text-xs text-white font-mono mb-4">AI Football Analytics Platform • "U" Hackathon</p>
-            
-            <p class="text-sm text-slate-300 leading-relaxed mb-6 font-light">
-              Full-stack sports analytics platform engineered in a 4-person hackathon team, orchestrating microservices across Java 21, Python FastAPI, and React.
-            </p>
-
-            <ul class="text-xs text-slate-400 space-y-2 mb-6 font-light">
-              <li class="flex items-start gap-2">
-                <i data-lucide="check" class="w-4 h-4 text-white shrink-0 mt-0.5"></i>
-                <span>Architected the Player Performance Index (PPI) microservice in Python FastAPI.</span>
-              </li>
-              <li class="flex items-start gap-2">
-                <i data-lucide="check" class="w-4 h-4 text-white shrink-0 mt-0.5"></i>
-                <span>Automated persistence with Neon Serverless PostgreSQL and Spring Boot backend.</span>
-              </li>
-              <li class="flex items-start gap-2">
-                <i data-lucide="check" class="w-4 h-4 text-white shrink-0 mt-0.5"></i>
-                <span>Containerized multi-service orchestration with Docker Compose on Google Cloud Run.</span>
-              </li>
-            </ul>
           </div>
 
-          <div class="pt-6 border-t border-slate-800 flex items-center justify-between">
-            <div class="flex flex-wrap gap-2">
-              <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-slate-800/90 text-slate-300 text-xs font-mono">
-                <img src="icons/java.svg" alt="" class="w-3 h-3"> Java 21
-              </span>
-              <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-slate-800/90 text-slate-300 text-xs font-mono">
-                <img src="icons/fastapi.svg" alt="" class="w-3 h-3"> FastAPI
-              </span>
-              <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-slate-800/90 text-slate-300 text-xs font-mono">
-                <img src="icons/googlecloud.svg" alt="" class="w-3 h-3"> GCP
-              </span>
+          <!-- Card 3: Rentz Multiplayer -->
+          <div class="deck-card glass-panel rounded-2xl p-6 sm:p-8 flex flex-col justify-between" data-depth="2">
+            <div>
+              <div class="flex items-center justify-between gap-4 mb-4">
+                <span class="px-2.5 py-1 rounded-md bg-white/10 border border-white/20 text-white font-mono text-xs font-medium">
+                  Sockets & Desktop
+                </span>
+                <a href="https://github.com/AsandeiAlexandru/LabProject_RENTZ_game" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-white transition-colors" title="View Source on GitHub">
+                  <i data-lucide="external-link" class="w-5 h-5"></i>
+                </a>
+              </div>
+
+              <h4 class="text-2xl font-bold text-white mb-1.5 tracking-tight">Rentz Multiplayer Card Game</h4>
+              <p class="text-xs text-white font-mono mb-4">Client-Server Desktop Application</p>
+              
+              <p class="text-sm text-slate-300 leading-relaxed mb-6 font-light">
+                Object-oriented card game engine enforcing Rentz tournament rules, turn validation state machines, and synchronized desktop gameplay via Java Swing.
+              </p>
+
+              <ul class="text-xs text-slate-400 space-y-2 mb-6 font-light">
+                <li class="flex items-start gap-2">
+                  <i data-lucide="check" class="w-4 h-4 text-white shrink-0 mt-0.5"></i>
+                  <span>Custom client-server TCP socket protocol for low-latency state synchronization.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <i data-lucide="check" class="w-4 h-4 text-white shrink-0 mt-0.5"></i>
+                  <span>Persistent session scoring, tournament standings, and records backed by PostgreSQL.</span>
+                </li>
+              </ul>
             </div>
-            <a href="https://github.com/TartaTudorAndrei/LDD_FRS" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-bold text-white hover:text-slate-300 transition-colors">
-              <span>GitHub</span>
-              <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
-            </a>
-          </div>
-        </div>
 
-        <!-- Project 3: Rentz Multiplayer -->
-        <div class="project-card hover-card glass-panel rounded-2xl p-6 sm:p-8 flex flex-col justify-between border-slate-800" data-categories="systems mobile">
-          <div>
-            <div class="flex items-center justify-between gap-4 mb-4">
-              <span class="px-2.5 py-1 rounded-md bg-white/10 border border-white/20 text-white font-mono text-xs font-medium">
-                Sockets & Desktop
-              </span>
-              <a href="https://github.com/AsandeiAlexandru/LabProject_RENTZ_game" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-white transition-colors" title="View Source on GitHub">
-                <i data-lucide="external-link" class="w-5 h-5"></i>
+            <div class="pt-6 border-t border-slate-800 flex items-center justify-between">
+              <div class="flex flex-wrap gap-2">
+                <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-slate-800/90 text-slate-300 text-xs font-mono">
+                  <img src="icons/java.svg" alt="" class="w-3 h-3"> Java
+                </span>
+                <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-slate-800/90 text-slate-300 text-xs font-mono">
+                  <i data-lucide="network" class="w-3 h-3 text-slate-400"></i> Sockets
+                </span>
+                <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-slate-800/90 text-slate-300 text-xs font-mono">
+                  <img src="icons/postgresql.svg" alt="" class="w-3 h-3"> Postgres
+                </span>
+              </div>
+              <a href="https://github.com/AsandeiAlexandru/LabProject_RENTZ_game" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-bold text-white hover:text-slate-300 transition-colors">
+                <span>GitHub</span>
+                <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
               </a>
             </div>
-
-            <h4 class="text-2xl font-bold text-white mb-1.5 tracking-tight">Rentz Multiplayer Card Game</h4>
-            <p class="text-xs text-white font-mono mb-4">Client-Server Desktop Application</p>
-            
-            <p class="text-sm text-slate-300 leading-relaxed mb-6 font-light">
-              Object-oriented card game engine enforcing Rentz tournament rules, turn validation state machines, and synchronized desktop gameplay via Java Swing.
-            </p>
-
-            <ul class="text-xs text-slate-400 space-y-2 mb-6 font-light">
-              <li class="flex items-start gap-2">
-                <i data-lucide="check" class="w-4 h-4 text-white shrink-0 mt-0.5"></i>
-                <span>Custom client-server TCP socket protocol for low-latency state synchronization.</span>
-              </li>
-              <li class="flex items-start gap-2">
-                <i data-lucide="check" class="w-4 h-4 text-white shrink-0 mt-0.5"></i>
-                <span>Persistent session scoring, tournament standings, and records backed by PostgreSQL.</span>
-              </li>
-            </ul>
           </div>
 
-          <div class="pt-6 border-t border-slate-800 flex items-center justify-between">
-            <div class="flex flex-wrap gap-2">
-              <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-slate-800/90 text-slate-300 text-xs font-mono">
-                <img src="icons/java.svg" alt="" class="w-3 h-3"> Java
-              </span>
-              <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-slate-800/90 text-slate-300 text-xs font-mono">
-                <i data-lucide="network" class="w-3 h-3 text-slate-400"></i> Sockets
-              </span>
-              <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-slate-800/90 text-slate-300 text-xs font-mono">
-                <img src="icons/postgresql.svg" alt="" class="w-3 h-3"> Postgres
-              </span>
+          <!-- Card 4: Erudit -->
+          <div class="deck-card glass-panel rounded-2xl p-6 sm:p-8 flex flex-col justify-between" data-depth="3">
+            <div>
+              <div class="flex items-center justify-between gap-4 mb-4">
+                <span class="px-2.5 py-1 rounded-md bg-white/10 border border-white/20 text-white font-mono text-xs font-medium">
+                  Mentorship Academy & Mobile
+                </span>
+                <a href="https://github.com/aniteicristi/erudit" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-white transition-colors" title="View Source on GitHub">
+                  <i data-lucide="external-link" class="w-5 h-5"></i>
+                </a>
+              </div>
+
+              <h4 class="text-2xl font-bold text-white mb-1.5 tracking-tight">Erudit</h4>
+              <p class="text-xs text-white font-mono mb-4">Gamified Educational Mobile App • DPIT</p>
+              
+              <p class="text-sm text-slate-300 leading-relaxed mb-6 font-light">
+                Collaborative Duolingo-style STEM learning mobile app built in a 6-person team during the prestigious 6-month DPIT practical mentorship competition.
+              </p>
+
+              <ul class="text-xs text-slate-400 space-y-2 mb-6 font-light">
+                <li class="flex items-start gap-2">
+                  <i data-lucide="check" class="w-4 h-4 text-white shrink-0 mt-0.5"></i>
+                  <span>Interactive quiz engine, streak progression, and gamification feedback mechanics.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <i data-lucide="check" class="w-4 h-4 text-white shrink-0 mt-0.5"></i>
+                  <span>Cross-platform mobile UI engineered with Flutter/Dart and native C++ integrations.</span>
+                </li>
+              </ul>
             </div>
-            <a href="https://github.com/AsandeiAlexandru/LabProject_RENTZ_game" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-bold text-white hover:text-slate-300 transition-colors">
-              <span>GitHub</span>
-              <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
-            </a>
-          </div>
-        </div>
 
-        <!-- Project 4: Erudit -->
-        <div class="project-card hover-card glass-panel rounded-2xl p-6 sm:p-8 flex flex-col justify-between border-slate-800" data-categories="mobile">
-          <div>
-            <div class="flex items-center justify-between gap-4 mb-4">
-              <span class="px-2.5 py-1 rounded-md bg-white/10 border border-white/20 text-white font-mono text-xs font-medium">
-                Mentorship Academy & Mobile
-              </span>
-              <a href="https://github.com/aniteicristi/erudit" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-white transition-colors" title="View Source on GitHub">
-                <i data-lucide="external-link" class="w-5 h-5"></i>
+            <div class="pt-6 border-t border-slate-800 flex items-center justify-between">
+              <div class="flex flex-wrap gap-2">
+                <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-slate-800/90 text-slate-300 text-xs font-mono">
+                  <img src="icons/flutter.svg" alt="" class="w-3 h-3"> Flutter
+                </span>
+                <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-slate-800/90 text-slate-300 text-xs font-mono">
+                  <img src="icons/cplusplus.svg" alt="" class="w-3 h-3"> C++
+                </span>
+              </div>
+              <a href="https://github.com/aniteicristi/erudit" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-bold text-white hover:text-slate-300 transition-colors">
+                <span>GitHub</span>
+                <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
               </a>
             </div>
-
-            <h4 class="text-2xl font-bold text-white mb-1.5 tracking-tight">Erudit</h4>
-            <p class="text-xs text-white font-mono mb-4">Gamified Educational Mobile App • DPIT</p>
-            
-            <p class="text-sm text-slate-300 leading-relaxed mb-6 font-light">
-              Collaborative Duolingo-style STEM learning mobile app built in a 6-person team during the prestigious 6-month DPIT practical mentorship competition.
-            </p>
-
-            <ul class="text-xs text-slate-400 space-y-2 mb-6 font-light">
-              <li class="flex items-start gap-2">
-                <i data-lucide="check" class="w-4 h-4 text-white shrink-0 mt-0.5"></i>
-                <span>Interactive quiz engine, streak progression, and gamification feedback mechanics.</span>
-              </li>
-              <li class="flex items-start gap-2">
-                <i data-lucide="check" class="w-4 h-4 text-white shrink-0 mt-0.5"></i>
-                <span>Cross-platform mobile UI engineered with Flutter/Dart and native C++ integrations.</span>
-              </li>
-            </ul>
           </div>
 
-          <div class="pt-6 border-t border-slate-800 flex items-center justify-between">
-            <div class="flex flex-wrap gap-2">
-              <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-slate-800/90 text-slate-300 text-xs font-mono">
-                <img src="icons/flutter.svg" alt="" class="w-3 h-3"> Flutter
-              </span>
-              <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-slate-800/90 text-slate-300 text-xs font-mono">
-                <img src="icons/cplusplus.svg" alt="" class="w-3 h-3"> C++
-              </span>
-            </div>
-            <a href="https://github.com/aniteicristi/erudit" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-bold text-white hover:text-slate-300 transition-colors">
-              <span>GitHub</span>
-              <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
-            </a>
-          </div>
         </div>
 
+        <!-- Indicator dots below deck -->
+        <div class="flex items-center justify-center gap-2 mt-8">
+          <button class="deck-dot h-2 rounded-full transition-all duration-300 bg-white w-6" data-index="0" aria-label="Go to project 1"></button>
+          <button class="deck-dot h-2 rounded-full transition-all duration-300 bg-slate-700 w-2 hover:bg-slate-500" data-index="1" aria-label="Go to project 2"></button>
+          <button class="deck-dot h-2 rounded-full transition-all duration-300 bg-slate-700 w-2 hover:bg-slate-500" data-index="2" aria-label="Go to project 3"></button>
+          <button class="deck-dot h-2 rounded-full transition-all duration-300 bg-slate-700 w-2 hover:bg-slate-500" data-index="3" aria-label="Go to project 4"></button>
+        </div>
       </div>
     </section>
 
@@ -681,6 +671,6 @@
   <script>
     lucide.createIcons();
   </script>
-  <script src="js/main.js?v=10.0"></script>
+  <script src="js/main.js?v=11.0"></script>
 </body>
 </html>
