@@ -43,10 +43,11 @@ This document tracks completed refinements, upcoming enhancements, content addit
 - [x] **Minimalist Monochrome Theme (Orange Pruned)**:
   - Transitioned website aesthetic from warm amber/orange to an obsidian and crisp white minimalist palette.
   - Converted all orange accent text, badges, and link highlights across Hero, Skills, Projects, Education, and Footer to pure white and subtle slate.
-- [x] **Interactive Stacked Project Card Deck**:
+- [x] **Interactive Stacked Project Card Deck (Matching `Card_Stack_Tamplate.png`)**:
   - Replaced static grid and category filter bar with a tactile, stacked deck of cards carousel.
-  - Cards peek from behind with 3D depth, opacity, and scale layers.
+  - Stepped bottom-left card offsets (`translate(-18px, 14px)`, `translate(-36px, 28px)`, etc.) with clean rounded corners (`rounded-[28px]`) and soft directional shadows matching the reference design.
   - Cycle cards smoothly on tap, swipe, arrow navigation, or indicator dot clicks.
+  - Clicking any visible peeking card in the back immediately brings it to the front.
   - Safe link handling ensures opening GitHub or external links without unintentionally cycling cards.
 - [x] **Toolchain & Skills Pruning**:
   - Removed redundant `C` from Languages (keeping `C++`, `Java 21`, `Python`, `Dart`, `SQL`, `TypeScript`).

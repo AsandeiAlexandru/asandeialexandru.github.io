@@ -28,7 +28,7 @@
   <script src="https://unpkg.com/lucide@latest"></script>
 
   <!-- Custom Stylesheet with Cache Buster -->
-  <link rel="stylesheet" href="css/style.css?v=11.0">
+  <link rel="stylesheet" href="css/style.css?v=12.0">
 </head>
 <body class="bg-[#07080a] text-slate-200 antialiased selection:bg-white selection:text-black relative overflow-x-hidden">
 
@@ -367,8 +367,8 @@
         </div>
       </div>
 
-      <!-- Stacked Card Deck -->
-      <div class="pt-8 pb-4">
+      <!-- Stacked Card Deck (Offset wrapper to visually balance the bottom-left stepped stack) -->
+      <div class="pt-6 pb-12 pl-12 sm:pl-16 pr-2 sm:pr-4">
         <div id="project-deck" class="deck-container">
 
           <!-- Card 1: PhoneAsPeri -->
@@ -579,7 +579,7 @@
         </div>
 
         <!-- Indicator dots below deck -->
-        <div class="flex items-center justify-center gap-2 mt-8">
+        <div class="flex items-center justify-center gap-2 mt-12">
           <button class="deck-dot h-2 rounded-full transition-all duration-300 bg-white w-6" data-index="0" aria-label="Go to project 1"></button>
           <button class="deck-dot h-2 rounded-full transition-all duration-300 bg-slate-700 w-2 hover:bg-slate-500" data-index="1" aria-label="Go to project 2"></button>
           <button class="deck-dot h-2 rounded-full transition-all duration-300 bg-slate-700 w-2 hover:bg-slate-500" data-index="2" aria-label="Go to project 3"></button>
@@ -671,6 +671,6 @@
   <script>
     lucide.createIcons();
   </script>
-  <script src="js/main.js?v=11.0"></script>
+  <script src="js/main.js?v=12.0"></script>
 </body>
 </html>
