@@ -19,12 +19,12 @@ function initProjectFilters() {
 
       // Update button styles
       filterButtons.forEach(btn => {
-        btn.classList.remove('bg-orange-500', 'text-black', 'font-bold', 'shadow-lg', 'shadow-orange-500/25');
+        btn.classList.remove('bg-white', 'text-black', 'font-bold', 'shadow-lg', 'shadow-white/20', 'bg-orange-500', 'shadow-orange-500/25');
         btn.classList.add('bg-slate-800/80', 'text-slate-300', 'hover:text-white');
       });
 
       button.classList.remove('bg-slate-800/80', 'text-slate-300', 'hover:text-white');
-      button.classList.add('bg-orange-500', 'text-black', 'font-bold', 'shadow-lg', 'shadow-orange-500/25');
+      button.classList.add('bg-white', 'text-black', 'font-bold', 'shadow-lg', 'shadow-white/20');
 
       // Filter project cards
       projectCards.forEach(card => {

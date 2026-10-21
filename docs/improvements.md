@@ -32,11 +32,17 @@ This document tracks completed refinements, upcoming enhancements, content addit
   - Removed skill percentage progress bars; expanded the 12 core tech square badges into a full-width responsive grid.
   - Simplified bottom footer and removed oversized contact callout card.
 - [x] **Desktop Left Sidebar Navigation**:
-  - Moved top navigation to a permanent fixed left sidebar on desktop (`lg:w-64 fixed left-0 top-0 bottom-0`) with vertical icons, active ScrollSpy indicators, and quick-action PDF resume and social links.
+  - Moved top navigation to a permanent fixed left sidebar on desktop (`lg:w-64 fixed left-0 top-0 bottom-0`) with active ScrollSpy indicators and quick-action PDF resume and social links.
+  - Cleaned navigation menu: removed icons in front of Home, Skills, Projects, Education for a sleek minimalist look.
+  - Removed top "AA" brand profile header badge from the sidebar for a distraction-free layout.
   - Responsive mobile header with sliding drawer menu for small screens.
-- [x] **Portrait & Glowing Tech Orbit (Clean Look)**:
-  - Removed floating tech badges (`C++`, `Java`, etc.) overlaid on top of the portrait photo for a cleaner, high-end aesthetic.
-  - Portrait is positioned cleanly within the glowing orange orbital rings and ambient backdrop.
+- [x] **Portrait & Clean Hero Alignment**:
+  - Completely removed the glowing orbit circles and orange backdrop orbs behind the portrait photo.
+  - Enlarged and positioned the portrait photo so it cleanly spans vertically from the down side of the quick info square to the upper side of the name "Alexandru Asandei".
+  - Removed "Availability: Open for Roles" from the hero info card.
+- [x] **Minimalist Monochrome Theme (Orange Pruned)**:
+  - Transitioned website aesthetic from warm amber/orange to an obsidian and crisp white minimalist palette.
+  - Converted all orange accent text, badges, and link highlights across Hero, Skills, Projects, Education, and Footer to pure white and subtle slate.
 - [x] **Core Competencies & Toolchain Breakdown**:
   - Added official technology SVG icons in front of every skill item (Languages, Frameworks, Systems & Networking, Cloud & Tools).
 - [x] **Education Section Refinement**:
